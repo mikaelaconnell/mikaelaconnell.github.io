@@ -6,8 +6,8 @@
 
 html, body {
   height: 100%;
-  background: #0e0e0e;
-  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  font-family: 'Playfair Display', serif;
   color: white;
   overflow: hidden;
 }
@@ -33,25 +33,27 @@ canvas#bg-animation {
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
+  font-style: italic;
 }
 
 .buttons .btn {
   margin: 0 1rem;
   padding: 0.75rem 1.5rem;
   border: 2px solid white;
-  border-radius: 10px;
+  border-radius: 30px;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .buttons .btn:hover {
   background: white;
-  color: #0e0e0e;
+  color: #0b0b0b;
 }
