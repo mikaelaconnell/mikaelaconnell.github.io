@@ -345,8 +345,14 @@ footer {
   	font-weight: 400;
   	color: white;            /* Match h1 color */
   	margin-top: 10px;
+	margin-bottom: 20px;
   	letter-spacing: 0.5px;
   	white-space: nowrap;
+}
+
+#lead-content a.btn-rounded-white {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #lead-overlay {
