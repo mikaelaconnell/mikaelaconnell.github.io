@@ -1,9 +1,9 @@
-// Show button on scroll
+// Show back to top button
 window.onscroll = function() {
   const btn = document.getElementById("myBtn");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (btn && (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)) {
     btn.style.display = "block";
-  } else {
+  } else if (btn) {
     btn.style.display = "none";
   }
 };
@@ -13,6 +13,7 @@ function topFunction() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Vanta Birds Background
 VANTA.BIRDS({
   el: "#lead",
   mouseControls: true,
