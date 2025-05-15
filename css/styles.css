@@ -340,10 +340,13 @@ footer {
 }
 
 #lead-content h2 {
-	color: #a0cfee;
-	font-weight: 500;
-	font-size: 2.25em;
 	margin-bottom: 15px
+	font-size: 1rem;         /* Smaller size */
+  	font-weight: 400;
+  	color: white;            /* Match h1 color */
+  	margin-top: 10px;
+  	letter-spacing: 0.5px;
+  	white-space: nowrap;
 }
 
 #lead-overlay {
