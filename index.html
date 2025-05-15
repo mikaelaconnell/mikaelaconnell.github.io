@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mikaela Connell | Data Scientist</title>
+  <title>You Should Hire Me</title>
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/6.0.0/css/font-awesome.min.css">
   <link rel="icon" href="images/M.png">
-    
-  <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <script src="./js/jquery.js"></script>
-  <script src="./js/three.r92.min.js"></script>
-  <script src="./js/dat.gui.min.js"></script>
-  <script src="./js/rison.js"></script>
-  <script src="./js/p5.min.js"></script>
-  <script src="./js/gallery.min.js"></script>
-  <script src="./js/vanta.birds.min.js"></script>
+
+  <!-- Vanta.js + Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#lead",
+        backgroundColor: 0x0b0b0b,
+        color1: 0xffffff,
+        color2: 0x9e7cff,
+        quantity: 3
+      });
+    });
+  </script>
+
+  <!-- Additional JS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/to.top.js"></script>
   <script src="https://kit.fontawesome.com/893d34278d.js" crossorigin="anonymous"></script>
 </head>
+<body>
+  <!-- Vanta Background Wrapper -->
+  <div id="lead">
+    <div id="lead-content">
+      <h1>Mikaela Connell</h1>
+      <h2>Data Scientist | Data Analytics | Healthcare | Marketing</h2>
+      <a href="assets/Mikaela_Connell_Resume.pdf" target="_blank" class="btn-rounded-white">View Resume</a>
+    </div>
+  </div>
 
 <body>
     <div id="lead" class="vanta-bg">
