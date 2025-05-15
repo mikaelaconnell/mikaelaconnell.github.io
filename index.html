@@ -1,21 +1,866 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mikaela Connell</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mikaela Connell | Data Scientist</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/6.0.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.png">
+    
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/three.r92.min.js"></script>
+    <script src="./js/dat.gui.min.js"></script>
+    <script src="./js/rison.js"></script>
+    <script src="./js/p5.min.js"></script>
+    <script src="./js/gallery.min.js"></script>
+    <script src="./js/vanta.birds.min.js"></script>
+    <script src="https://kit.fontawesome.com/893d34278d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <canvas id="bg-animation"></canvas>
-  <div class="content">
-    <h1>Mikaela Connell</h1>
-    <p>Data Scientist | Data Analytics | Healthcare | Marketing</p>
-    <div class="buttons">
-      <a href="assets/Mikaela_Connell_Resume.pdf" class="btn" target="_blank">View Resume</a>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-  </div>
-  <script src="assets/js/animation.js"></script>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <!-- 
+             <li>
+                 <a href="https://mikaelaconnell.github.io" class="no-scroll" target="_blank">Blog</a>
+             </li>
+             -->
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <!-- Add button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <section id = "wm">
+        <div id="lead">
+
+        <div id="lead-content">
+            <h1>Mikaela Connell</h1>
+            <h2>Data Scientist | Data Analytics | Healthcare | Marketing</h2>
+            <a href="assets/Mikaela_Connell_Resume.pdf" target="_blank" class="btn-rounded-white">View Resume</a>
+        </div>
+        <!-- End #lead-content -->
+        
+        
+    </div>
+
+    </section>
+
+    <div class="top-left">
+              <span id="fps"></span>
+    </div>
+    
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure align = 'center'>
+                        
+                            <figcaption><h2 class="heading">About Me</h2></figcaption>
+                   
+                            <img src="images/mikaela.jpg" width = 300 height = 280/>
+                        
+                    </figure>
+                    <br>
+                    <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <td><a href="https://github.com/SamShowalter" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          <td><a href="https://www.strava.com/athletes/113990339" target="_blank"><i class="fab fa-strava fa-2x" aria-hidden="true"></i></a></td>
+                          <td><a href="https://linkedin.com/in/samuelrshowalter" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></td>
+                        </table>
+                    
+                </div>
+
+
+                <div class="col-md-8">
+                    <p>
+                        <br><br><br>
+                        <!-- I am a Computer Science PhD student in UC Irvine's <a href="https://www.ics.uci.edu/~smyth/research_group.html" target="_blank">DataLab Group</a>. My research explores machine learning robustness in computer vision, natural language, and reinforcement learning applications. In particular, I explore methods of conducting novelty or out-of-distribution (OOD) detection with deep learning models. -->
+                        I am a Data Scientist at Stripe working on Machine Learning models for fraud. Previously I was a PhD student at UC Irvine where I focued on sequential machine learning tasks with low supervision.
+                        <br><br>
+                        <strong><font size="+2">Recent News:</font></strong>
+                            <ul>
+                                <li><strong>Jan 2024</strong> - I joined Stripe as a Data Scientist working on ML for fraud!
+                                <li><strong>Jan 2024</strong> - Our <a href="https://arxiv.org/abs/2312.07679" target="_blank" >paper</a> on Bayesian methods for efficient prediction of human consensus was accepted at AI Stats 2024!
+                                <li><strong>Oct 2022</strong> - Our <a href="https://arxiv.org/abs/2210.06464" target="_blank" >paper</a> on probabilistic querying for neural sequence models was 
+                                    awarded an Oral at NeurIPs 2022! </li>
+                                <li><strong>Apr 2022</strong> - I was awarded the NSF Graduate Research Fellowship!
+                                <li><strong>Nov 2021</strong> - I was awarded the Hasso-Plattner Institute (HPI) PhD Fellowship (3 years)
+                                <li><strong>Sep 2020</strong> - I was awarded the UCI ICS Deans Award of $10,000
+                            </ul>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            
+            <div data-date="Jan 2024 – Present">
+                <h2><a href="https://stripe.com/radar" target="_blank" ><div class="education-image">
+                    <img src="images/stripe.png" width = 200 height = 75/>
+                </div></a></h2>
+                <h3>Stripe</h3>
+                <h4>Data Scientist</h4>
+                <p> 
+                    Building machine learning methods to detect and prevent financial fraud.
+                </p>
+            </div>
+        
+            <div data-date="June 2023 – September 2023">
+                <h2><a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research" target="_blank" ><div class="education-image">
+                    <img src="images/qcai.jpeg" width = 270 height = 75/>
+                </div></a></h2>
+                <h3>Qualcomm AI Research</h3>
+                <h4>Machine Learning Researcher: Generative AI</h4>
+                <p> 
+                    Explored novel ways of conducting image editing with deep generative models, focusing particularly on diffusion generative modeling and its variants. My duties included conducting literature reviews, deriving new objective functions for image editing, and building software implementations / models to evaluate our theories.
+                </p>
+            </div>
+
+
+            <div data-date="June 2022 – September 2022">
+                <h2><a href="https://www.amazon.science/" target="_blank" ><div class="education-image">
+                    <img src="images/amazon_science.jpeg" width = 450 height = 75/>
+                </div></a></h2>
+                <h3>Amazon Science (Personalization)</h3>
+                <h4>Applied Scientist: Personalization</h4>
+                <p> 
+                    Conducted research to improve Amazon's ability to recommend products that facilitate holistic online engagement (clicks, hearts, time on page, etc.). Formulated task as a multi-task learning problem and implemented+evaluated several SOTA algorithms. Achieved an average relative improvement of over 10% over existing production baselines. Augmented my research code into MultiRec: a configuration-driven machine learning research software package to accelerate research. MultiRec supports PyTorch and sklearn-style models, allowing me to train 1443 models over 74 experiment settings in a single summer.
+                </p>
+            </div>
+
+            <div data-date="June 2021 – September 2021">
+                <h2><a href="https://www.sri.com/" target="_blank" ><div class="education-image">
+                    <img src="images/sri.jpeg" width = 450 height = 30/>
+                </div></a></h2>
+                <h3>Stanford Research Institute (SRI), International</h3>
+                <h4>Machine Learning Researcher</h4>
+                <p> Visiting research scientist at the Stanford Research Institute (SRI International) on the competency-aware machine learning (CAML) project team. Developed CAMeLeon, a reinforcement learning competency assessment research package. The first of it's kind, CAMeLeon integrates many of the most popular reinforcement learning software packages and allows developers to easily train an agent, collect data on its internal state, and then analyze said data with a suite of competency-awareness metrics developed by SRI. CAMeLeon was presented to the entire company and open-sourced as official SRI software release. See the Projects section below for more information.
+                </p>
+            </div>
+
+            <div data-date="August 2018 – August 2020">
+                <h2><a href="https://www.westmonroepartners.com" target="_blank" ><div class="education-image">
+                    <img src="images/wmp_all.png" width = 260 height = 60/>
+                </div></a></h2>
+                <h3>West Monroe Partners</h3>
+                <h4>Technology and Data Science Consultant</h4>
+                <p>
+                    Worked primarily as a Data Scientist with large financial institutions. My largest project was a knowledge extraction and classification initiative for data privacy at one of the world's largest banks. I also integrated demand forecasting at VisionWorks of America (POC), and completed customer segmentation projects to assist in marketing various middle-market financial institutions. 
+                </p>
+            </div>
+
+            <div data-date="May 2018 – August 2018">
+                <h2><a href="https://www.nist.gov" target="_blank" ><div class="education-image">
+                    <img src="images/nist.png" width = 260 height = 60/>
+                </div></a></h2>
+                <h3>National Institute of Standards and Technology</h3>
+                <h4>Quantum Computing Research Fellow</h4>
+                <p>
+                    Selected as one of 21 students and new graduates in the country to join the NIST laboratories of Boulder, Colorado. Operating within the Information Technology Laboratory, I developed quantum state tomography software to simulate qubit measurement by a computer. Our interdisciplinary group was predominantly theoretical and interested in maximizing the fidelity of qubit measurements without facilitating decoherence. My simulation experiments identified peculiar qubit behavior when measured under different purity and optimization methods. Collaboration with experimental groups to test our theories was common.
+                </p>
+            </div>
+
+            <div data-date="May 2016 – August 2016">
+                <h2><a href="https://www.8451.com" target="_blank" ><div class="education-image">
+                    <img src="images/8451.jpeg" width = 200 height = 50/>
+                </div></a></h2>
+                <h3>84.51<span>&#176;</span></h3>
+                <h4>Data Scientist: Merchandising Insights</h4>
+                <p>
+                    Data Science arm of Kroger stores. Developed and outlier detection system in SQL to programmatically parse incoming Controlled Store Test (CST) data for executional errors. CSTs allow Kroger and its consumer packaged goods (CPG) providers (P&G, Burt's Bees, etc.) to experiment with different store layouts and product packaging. These tests are difficult to conduct because holding extraneous variables constant is extremely difficult. My task was to validate testing data was suitable for further analysis and not greatly impacted by confounding factors. Ultimately, my solution ran in less than 30 seconds and detected over 85% of known executional issues historically, saving analysts 4 - 8 hours per test.
+                </p>
+            </div>
+
+
+    <!--         <div data-date="May 2015 – August 2015">
+                <h2><a href="https://www.chem.purdue.edu" target="_blank" ><div class="education-image">
+                    <img src="images/purdue_chemistry.png" width = 260 height = 60/>
+                </div></a></h2>
+                <h3>Purdue University</h3>
+                <h4>Chemistry Research Fellow</h4>
+                <p>
+                    Summer undergraduate research fellow (SURF) in Dr. Suzanne Bart's inorganic Chemistry lab group. Mentored by PhD student John Kiernicki and worked to generate Rhodium and Iridium organo-metallic complexes by successfully attaching organic ligands to the structure. Metal-mediated organic transformations with f-block compounds, particularly those with low oxidation states, are difficult to conduct. Over the summer I was able to generate one Iridium crystal structure of adequate quality, and determine its resulting structure using H1 NMR (certified over summer), IR spectroscopy, and other diagnostic tests.
+                </p>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="container">
+            <div class = "row">
+                <div class = "education-container shadow-large">
+                    <div class="education-image">
+                                <img src="images/uci.png" width = 300 height = 300/>
+                    </div>
+
+                    <div class="education-block">
+
+                        <h3>University of California, Irvine</h3>
+                        <span class="education-date">August 2020 - Present</span>
+                        <h4>PhD in Computer Science<br></h4>
+                        <p>
+                            Jan 2024: On leave <br>
+                            
+                            My research focuses on machine learning sequence tasks with low supervision and various sources of truth, such as human annotators and models. I also completed work in deep generative modeling and reinforcement learning.
+                        </p>
+                    </div>
+                </div>
+                <!-- End .education-block -->
+
+
+                <div class="education-container shadow-large">
+                    <div class="education-image">
+                            <img src="images/depauw.jpg" width = 300 height = 300/>
+                    </div>
+
+                    <div class ="education-block">
+                        <h3>DePauw University</h3>
+                        <span class="education-date">August 2014 - May 2018</span>
+                        <h4>Bachelors' of Arts in Mathematics, Economics <br>
+                        Minor in Computer Science</h4>
+                        <p>
+                            With the help of a few friends, I launched DePauw's Data Science Group (DPUDS) in 2017. Over the two years I served as President, DPUDS won a Data Science hackathon, completed over a dozen projects, and grew to be one of the largest groups on campus. I also served as President of DePauw's Investment Group. I graduated in 2018 with degrees in Mathematics and Economics, Summa Cum Laude. 
+                        </p>
+                    </div>
+                </div>
+        <!-- End .education-block -->
+
+            </div>
+        </div>
+        
+    </div>
+    <!-- End #education -->
+
+
+    <div id="research" class="background-alt">
+        <h2 class="heading">Research</h2>
+        <div class="container">
+            <div class="row" >
+
+                <div class="project shadow-large" >
+                    <div class="project-image">
+                        <img src="images/ai_stats_thumbnail_final.png" width = 400 height = 350/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>Bayesian Online Learning for Consensus Prediction</h3>
+                        <p align = 'left'><font size="+2"><strong>AI Stats 2024: &nbsp;&nbsp;&nbsp;&nbsp;</strong></font> <strong>Sam Showalter*</strong>, Alex Boyd*, 
+                            Padhraic Smyth, Mark Steyvers  <br> (* Denotes equal contribution)</p>
+                        <p align = 'left'>
+                        Given a pre-trained classifier and multiple human experts, we investigate the task of online classification where model predictions are provided for free but querying humans incurs a cost. In this setting, oracle ground truth is not available. Instead, labels are defined as the consensus vote of all experts. Human time is costly, so we propose a general framework for online Bayesian consensus estimation. 
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>PDF</th>
+                            <th>Poster</th>
+                            <th>Code</th>
+                            <!-- <th>Reviews</th> -->
+                          </tr>
+                          <tr>
+                            <td><a href="https://arxiv.org/abs/2312.07679" target="_blank"><i class="far fa-file-pdf fa-2x" aria-hidden="true"></i></a></td>
+                             <td><a href="docs/ai_stats_poster_bocp.pdf" target="_blank"><i class="fas fa-chalkboard-teacher fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href="https://github.com/SamShowalter/bocp" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                            <!-- <td><a href="" target="_blank"><i class="fas fa-magnifying-glass fa-2x" aria-hidden="true"></i></a></td> -->
+                          </tr>
+                        </table>
+                    </div>
+                    <!-- End .research-info -->
+                </div>
+                <!-- End .research -->
+
+
+
+
+
+
+                <div class="project shadow-large" >
+                    <div class="project-image">
+                        <img src="images/query_thumbnail.png" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>Predictive Querying for Neural Sequence Models</h3>
+                        <p align = 'left'><font size="+2"><strong>NeurIPs 2022 (Oral): &nbsp;&nbsp;&nbsp;&nbsp;</strong></font> Alex Boyd*, <strong>Sam Showalter*</strong>, 
+                            Stephan Mandt, Padhraic Smyth  <br> (* Denotes equal contribution)</p>
+                        <p align = 'left'>
+                            In reasoning about sequential events it is natural to pose probabilistic queries such as “when will event A occur next” or “what is the probability of A occurring before B,” with applications in areas such as user modeling, medicine, and finance. However, with machine learning shifting towards neural autoregressive models, probabilistic querying has been largely restricted to simple cases such as next-event prediction. In this paper we introduce a general typology for predictive queries in autoregressive sequence models and show that such queries can be systematically represented by sets of elementary building blocks.
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>PDF</th>
+                            <th>Poster</th>
+                            <th>Code</th>
+                            <!-- <th>Reviews</th> -->
+                          </tr>
+                          <tr>
+                            <td><a href="https://arxiv.org/abs/2210.06464" target="_blank"><i class="far fa-file-pdf fa-2x" aria-hidden="true"></i></a></td>
+                             <td><a href="docs/neurips_poster.pdf" target="_blank"><i class="fas fa-chalkboard-teacher fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href="https://github.com/ajboyd2/prob_seq_queries" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                            <!-- <td><a href="" target="_blank"><i class="fas fa-magnifying-glass fa-2x" aria-hidden="true"></i></a></td> -->
+                          </tr>
+                        </table>
+                    </div>
+                    <!-- End .research-info -->
+                </div>
+                <!-- End .research -->
+
+
+
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/crisis.jpeg" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>Augmenting Unilabel Crisis Tweets to Develop a Lexically Invariant Sequence Tagger</h3>
+                        <!-- <h5>Preprint submitted to <i>Expert Systems with Applications</i></h5> -->
+                        <p align = 'left'>
+                          When a large-scale crisis occurs, the most common destination for up-to-date information is social media, namely Twitter. As crises affect people, it is essential to extract and categorize all relevant information to ensure a thorough and swift response. However, there currently are no sequence tagging datasets for crisis reponse. We programmatically generate a proxy for this dataset with unilabeled tweets and data augmentation from <a href="https://crisisnlp.qcri.org/humaid_dataset.html" target="_blank">HumAID</a> and successfully build a lexically invariant sequence tagger.
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>PDF</th>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="docs/showalter_crisis_nlp.pdf" target="_blank"><i class="far fa-file-pdf fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href="https://github.com/SamShowalter/NLTweetRelief" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <!-- End .research-info -->
+                </div>
+                <!-- End .research -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/Credit-Card-Fraud.jpg" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>Minimizing the Societal Cost of Credit Card Fraud with Limited and Imbalanced Data</h3>
+                        <!-- <h5>Preprint submitted to <i>Expert Systems with Applications</i></h5> -->
+                        <p align = 'left'>
+                            Machine learning has automated much of financial fraud detection, notifying firms of – or even blocking – questionable transactions instantly. However, data imbalance starves traditionally trained models of the content necessary to detect fraud. This study examines
+                            three separate factors of credit card fraud detection via machine learning. First, it assesses the potential for different sampling
+                            methods – undersampling and Synthetic Minority Oversampling Technique (SMOTE) – to improve algorithm performance...
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>PDF</th>
+                            <th>Ppt.</th>
+                            <th>Talk</th>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://arxiv.org/abs/1909.01486" target="_blank"><i class="far fa-file-pdf fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href="https://docs.google.com/presentation/d/1MKhhsuI9nBz67m7erDy0NxQ1k6HCb2gzJOTe8WcUwIs/edit?usp=sharing" target="_blank"><i class="far fa-file-powerpoint fa-2x" aria-hidden="true"></i></a></td>
+                             <td><a href="https://www.rose-hulman.edu/class/ma/web/mathconf/2018/program.html" target="_blank"><i class="fas fa-chalkboard-teacher fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href="https://github.com/SamShowalter/Mathematics_Senior_Thesis_Fraud" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <!-- End .research-info -->
+                </div>
+                <!-- End .research -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/stocks.png" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>Validating Weak Form Market Efficiency in U.S. Stock Markets with Trend Deterministic Price Data and Machine Learning</h3>
+                        <p align = 'left'>
+                            The Efficient Market Hypothesis has been a staple of economics research for decades. In particular, weak form market efficiency – the notion that past prices cannot predict future performance – is strongly supported by econometric evidence. In contrast, machine learning  algorithms  implemented  to  predict  stock  price  have  been  touted,  to  varying  degrees,  as  successful.   Moreover,  somedata scientists boast the ability to...
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>PDF</th>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://arxiv.org/abs/1909.05151" target="_blank"><i class="far fa-file-pdf fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href="https://github.com/SamShowalter/Economics_Thesis_EMH" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <!-- End .research-info -->
+                </div>
+
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/blochsphere.gif" width = 400 height = 400 />
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>Simulating the Characterization of Qubits with Quantum State Tomography Software</h3>
+                        <p align = 'left'>
+                            Characterizing quantum bits (qubits) is an essential aspect of quantum computing and quantum information science because successful quantum computation requires high fidelity preparation, manipulation, and measurement of qubits. However, fully characterizing qubits with a single measurement is impossible. Therefore, quantum state tomography (QST) – estimating a quantum state using a collection of measurements of copies of that state – is necessary to characterize experimental quantum devices...
+                        </p>
+                            <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Abstract</th>
+                            <th>Presentation</th>
+                            <th>Code</th>
+                            <th>Lab</th>
+                          </tr>
+                          <tr>
+                            <td><a href="docs/NIST_QST_Abstract.pdf" target="_blank"><i class="far fa-file-pdf fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href="https://docs.google.com/presentation/d/1MKhhsuI9nBz67m7erDy0NxQ1k6HCb2gzJOTe8WcUwIs/edit?usp=sharing" target="_blank"><i class="far fa-file-powerpoint fa-2x" aria-hidden="true" ></i></a></td>
+                            <td><a href="https://github.com/SamShowalter/NIST_State_Tomo_Coverage" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                            <td><a href = 'https://www.nist.gov/itl/sed/boulder-group' target="_blank"><i class="fas fa-flask fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+                                
+                    </div>
+
+                </div>
+
+                <a id="view-more-research" href="#">View More Research</a>
+                <div id="more-research" class="row">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/kawaii.jpg" width = 400 height = 400 />
+                        </div>
+                        <!-- End .research-image -->
+                        <div class="project-info">
+                            <h3>Cuteness in Japanese Design: Investigating Perceptions of Kawaii Among American College Students</h3>
+                            <p align = 'left'>
+                                Japanese products and pop culture, such as Hello Kitty, Pokemon, J-pop, and Anime, have gained global popularity, including in the United States. As a result, Japanese Kawaii (cute) design has also spread. In the current paper...
+
+                                <br><br> 
+
+                                Ultimately, the intention of this work is to assess which styles of design are more readily accepted by humans to facilitate human-robot interaction. Paper published in <i>International Conference on Applied Human Factors and Ergonomics</i>.
+                            </p>
+                                <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                              <tr>
+                                <th>PDF</th>
+                              </tr>
+                              <tr>
+
+                                <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-94944-4_43" target="_blank"><i class="fas fa-book fa-2x" aria-hidden="true"></i></a></td>
+                               
+                              </tr>
+                            </table>
+                                    
+                        </div>
+                    <!-- End .research -->
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+    <!-- End #research -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Scala</li>
+            <li>SQL</li>
+            <li>Machine Learning</li>
+            <li>NLP</li>
+            <li>Deep Learning</li>
+            <li>ETL</li>
+            <li>Spark</li>
+            <li>Tensorflow</li>
+            <li>Apache Airflow</li>
+            <li>Flyte</li>
+            <li>PyTorch</li>
+            <li>RLlib</li>
+            <li>Ray</li>
+            <li>CUDA</li>
+            <li>AWS SageMaker</li>
+            <li>OpenAI Gym</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Selected Projects</h2>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/multirec_m_only.png" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>MultiRec: A Machine Learning Research Package for Recommender Systems</h3>
+                        <p align = 'left'>
+                            MultiRec accelerates machine learning research for recommender systems by procedurally generating experiments with a single configuration file. MultiRec offers CPU and GPU support, data parallelization, automatic preprocessing, and standard+stratified evaluation. It also works natively with local and S3 directories and can deploy its trained models to SageMaker using the bring-your-own-model design pattern.
+                        </p>
+                        <!-- <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" > -->
+                        <!--   <tr> -->
+                        <!--     <th>Ppt.</th> -->
+                        <!--   </tr> -->
+                        <!--   <tr> -->
+                        <!--     <td><a href="https://docs.google.com/presentation/d/13UdpQdagcTZUTC8rC-FUywYHgWVhyLSLwG36zuFv4WY/edit?usp=sharing" target="_blank"><i class="far fa-file-powerpoint fa-2x" aria-hidden="true"></i></a></td> -->
+                        <!--   </tr> -->
+                        <!-- </table> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/cameleon.png" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>CAMeLeon: A Reinforcement Learning Competency Awareness Research Package</h3>
+                        <p align = 'left'>
+                        Machine learning robustness is central to ensuring we can trust intelligent, automated systems. Despite the huge advances in Machine and Reinforcement Learning, many of these systems still remain black box classifiers. Research in explainable AI (XAI) and ML robustness is ongoing, but largely has not been explored with Reinforcement Learning. CAMeLeon addresses this gap, allowing a user to examine RL agent competency in different environments.
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Code</th>
+                            <th>Ppt.</th>
+                            <th>Talk</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/SRI-AIC/cameleon" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+
+                            <td><a href="https://docs.google.com/presentation/d/13UdpQdagcTZUTC8rC-FUywYHgWVhyLSLwG36zuFv4WY/edit?usp=sharing" target="_blank"><i class="far fa-file-powerpoint fa-2x" aria-hidden="true"></i></a></td>
+                             <td><a href="https://drive.google.com/file/d/1K04PmX50klLvMKmB4geE2WlMpYBYBYU6/view?usp=sharing" target="_blank"><i class="fas fa-chalkboard-teacher fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <div class = "verticalhorizontal"><img class = 'moveimage' src="images/airbender.png" width = 400, height = 350,  border="0"></div>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Airbender: Automate ML with Apache Airflow DAGs</h3>
+                        <p align = 'left'>
+                            Airbender is a meta-progamming tool that allows Data Scientists to quickly and effectively build high quality machine learning solutions. After receiving a configuration, Airflow writes a python code file that encapsulates all of the functionality in nodes and maps all relevant dependencies as a directed acyclic graph (DAG). With intelligent package detection, Airbender creates a file that is ready to compile in Airflow immediately, allowing users full transparency into and control of their experiments.
+                        </p>
+
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/SamShowalter/airbender" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/NEFT_snake.gif" width = 400 height = 400/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Hunger Snakes: Neuroevolution of Fixed Topologies</h3>
+                        <p align = 'left'>
+                            There are many examples on the internet of developers and Data Scientists utilizing Neuroevolution of Augmenting Topologies to teach the agents of simple computer games to play (Snake, Mario Bros., etc.). However, few of these implementations conduct such an experiment under adversarial circumstances, when multiple agents compete for limited resources. In this project I build, <b>from scratch</b>, an adversarial implementation of Neuroevolution for the game snake. For simplicity, topologies were fixed for all agents based on a common fitness function. 
+                        </p>
+
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/SamShowalter/NEFT_Snake_Game" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/caltech256.jpg" width = 400 height = 400/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Web Application for CalTech256 Image Classification</h3>
+                        <p align = 'left'>
+                            The <a href="http://www.vision.caltech.edu/Image_Datasets/Caltech256/"target="_blank">CalTech 256</a> image dataset was created to assess the performance of different image classification models, particular under different input data size (number of photos) constraints. Using a transfer learning model build on the Xception classifier, myself and small team I led were able to achieve a holistic macro and micro F1 Score of 86% across all classes. We then integrated this model into a frontend Flask web application where a user can upload any photo and see the top 10 class prediction probabilities as well as the overall prediction.
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/SamShowalter/CalTech256" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+
+
+
+
+
+                <a id="view-more-projects" href="#">View More Projects</a>
+                <div id="more-projects" class="row">
+
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/MNIST.gif" width = 400 height = 400/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>MNIST Handwriting Detection GUI</h3>
+                        <p align = 'left'>
+                            The MNIST dataset from the U.S. Postal Service is one of the most commonly used datasets when teaching optical character recognition with basic convolutional neural networks. After seeing a Javascript and Lua implementation here (ADD HREF), I decided to see if I could build something similar, but with more transparency into the process and completely in Python. The solution I completed was 98 percent accurate for classifying numbers.
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/SamShowalter/MNIST_UI" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/shakespeareAI.jpg" width = 400 height = 400/>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Shakespeare Chains: Markov Chain Story Writing</h3>
+                            <p align = 'left'>
+                                Markov Chains are simple networks that rely on probablistic state transfer. These transfer probabilities are based on a specific corpus, something that can be unfluenced by the user. This project allows the user to upload a text file (PDF support coming shortly!) and then generate a unique story with the style of the input authors. This process will include all punctuation and spacing is provided by the system, allowing for stylistic spacing like in poetry to be accommodated.
+                            </p>
+                            <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                              <tr>
+                                <th>Code</th>
+                              </tr>
+                              <tr>
+                                <td><a href="https://github.com/SamShowalter/Shakespeare_Chains" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                              </tr>
+                            </table>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/dpu_adventure_game.png" width = 400 height = 400/>
+                        </div>
+                        <!-- End .project-image -->
+
+                        <div class="project-info">
+                            <h3>DePauw Adventure Game: Java-based Campus Adventure</h3>
+                            <p align = 'left'>
+                                The DePauw Adventure Game is a school project that evolved into something greater, a complete, dynamic gameboy-style game where the user is a student trying to fight his or her way through college. The player must grow in strength by roaming the map before he or she tackles each of the 8 academic buildings, unlocking the 9th and final building, the office of administration. Here, players come face to face with their strongest opponent yet, the University President. Download the .jar file and play today (no, this is not a virus)! See the presentation for more details on the functionality and dynamism of this game.
+                            </p>
+                            <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                              <tr>
+                                <th>Code</th>
+                                <th>Presentation</th>
+                              </tr>
+                              <tr>
+                                <td><a href="https://github.com/SamShowalter/DePauw_Adventure_Game" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                                <td><a href="https://drive.google.com/file/d/1ipDNeeoo6iAV6MquwiwRnbYKD-nFmICX/view?usp=sharing"  target="_blank" align = 'right' ><i class="far fa-file-powerpoint fa-2x" aria-hidden="true"></i></a></td>
+                              </tr>
+                            </table>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+
+                
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/sudoku.gif" width = 400 height = 425/>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Sudoku Solver GUI: Intelligent Heuristics and Search Algorithms</h3>
+                            <p align = 'left'>
+                                Instead of relying on simple backtracking algorithms and the blazing speeds of a CPU, this Sudoku solver and GUI walks through the puzzle step-by-step using intelligent heuristics to quickly finish the problem. In cases of uncertainty, the solver will posit a guess and continue its execution. If it runs across an error, this guess is corrected or adjusted to accommodate the new information created. NOTE: This system is not yet perfect, and on rare occaisons (specifically when no input is provided), this solver will fail. Future development is forthcoming to patch this, but in the mean-time check out the list of sample puzzles provided. Before a cell is solved, it is color-coded and potential matches appear in the corners, just like how my Grandma solves them!
+                            </p>
+                            <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                              <tr>
+                                <th>Code</th>
+                              </tr>
+                              <tr>
+                                <td><a href="https://github.com/SamShowalter/CSC330_AI/tree/master/proj4_SudokuSolver" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                              </tr>
+                            </table>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+
+                
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/maze.gif" width = 400 height = 400/>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Maze Solver: BFS and DFS Visualized</h3>
+                            <p align = 'left'>
+                                Bread first and depth first search are two essential concepts for software development. In order to visualize the differences in execution for each, I built a maze solver system that takes a text file maze as input and then utilizes either BFS or DFS to find the exit, if there is one. The maze solver accomodates no entrances and ill-formatted mazes without crashing.
+                            </p>
+                            <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                              <tr>
+                                <th>Code</th>
+                              </tr>
+                              <tr>
+                                <td><a href="https://github.com/SamShowalter/CSC330_AI/tree/master/proj2_MazeSearching" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                              </tr>
+                            </table>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <!-- <div id="blog"> -->
+    <!--             <div class="container"> -->
+    <!--         <div class="row"> -->
+    <!--               <h2 class="heading" align="center"><a href="https://samshowalterblog.github.io/" target="_blank"> > Blog < </a></h2> -->
+    <!--                 <p> -->
+    <!--                     After being accepted as a Machine Learning and AI PhD student at UC Irvine, I decided to start a blog, hyperlinked <a href="https://samshowalterblog.github.io" target="_blank">here</a> and in the title of this section. When I was considering a PhD, I wanted nothing more than to learn about someone's experience, start to finish. There were relatively few resources I could find, so I decided to document my own experience for others. -->
+    <!--                 <br><br> -->
+    <!--                     Now that my first year is complete, I am utilizing this blog to write more technical posts about my research and other interesting technology. -->
+    <!--                 </p> -->
+    <!--             </div> -->
+    <!--         </div> -->
+    <!-- </div> -->
+
+    
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/samuelrshowalter@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2024 Samuel Showalter
+                    </p>
+
+                    <!-- <p> -->
+                    <!-- Visit Count: -->
+                    <!--     <a href="https://www.webfreecounter.com/" target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gmmfknqf&nd=7&style=1" border="0" alt="counter for blog"></a> -->
+                    <!-- </p> -->
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/SamShowalter" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.strava.com/athletes/samuelrshowalter" target="_blank"><i class="fab fa-strava" aria-hidden="true"></i></a>
+                        </li>
+            
+                        <li>
+                            <a href="https://linkedin.com/in/samuelrshowalter" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="./js/to.top.js"></script>
 </body>
+
 </html>
