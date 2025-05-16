@@ -17,18 +17,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      VANTA.BIRDS({
-        el: "#lead",
-        backgroundColor: 0x3498db, // light blue background color
-        color1: 0xff4c4c, // light red 
-        color2: 0x7fd8ff, // light blue 
-        quantity: 5,
-        speedLimit: 6.0
-        cohesion: 3.5
-      });
+  window.addEventListener('DOMContentLoaded', () => {
+    VANTA.BIRDS({
+      el: "#lead",
+      backgroundColor: 0x3498db,   // Bright blue background
+      color1: 0xff4c4c,            // Light red birds
+      color2: 0x7fd8ff,            // Light blue birds
+      quantity: 5,                 // Slightly more birds
+      speedLimit: 6.0,             // Slightly faster
+      cohesion: 3.5,               // Closer together
+      alignment: 0.5,              // Directional bias
+      separation: 20.0,            // Less space between birds
+      backgroundAlpha: 1.0         // Ensure no transparency
     });
-  </script>
+  });
+</script>
 
   <!-- Additional JS -->
   <script src="js/jquery.js"></script>
