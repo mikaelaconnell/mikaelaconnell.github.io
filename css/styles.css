@@ -1306,3 +1306,7 @@ body {
   margin-bottom: 20px;
 }
 
+body {
+  font-family: 'Playfair Display', Georgia, serif !important;
+}
+
