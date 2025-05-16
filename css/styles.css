@@ -1190,3 +1190,54 @@ footer {
   }
 }
 
+#lead {
+  background-color: #3498db; /* Light blue like Sam’s */
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+#lead-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.lead-name {
+  color: white;
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.lead-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.btn-rounded-white {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-rounded-white:hover {
+  background-color: white;
+  color: #3498db;
+  text-decoration: none;
+}
+
