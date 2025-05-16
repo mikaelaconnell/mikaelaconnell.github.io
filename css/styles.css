@@ -7,6 +7,7 @@
   --white: #ffffff;
 }
 
+/* === Base Styles === */
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -15,6 +16,17 @@ body {
 body.active {
   overflow: hidden;
   z-index: -1;
+}
+
+.moveimage {
+  position: relative;
+  top: 12px;
+}
+
+/* === Header === */
+@keyframes dropHeader {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
 }
 
 header {
@@ -29,7 +41,7 @@ header {
 
 header ul {
   display: inline-block;
-  background: var(--white);
+  background: #fff;
   text-align: center;
   padding: 10px;
   margin: 0;
@@ -43,42 +55,70 @@ header li {
 
 header a {
   display: block;
-  color: var(--primary-color);
+  color: #3498db;
   padding: 10px;
 }
 
 header a:hover {
-  color: var(--hover-color);
-  text-decoration: none;
+  color: #217dbb;
   background: #eee;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+header a:focus {
+  color: #3498db;
+  text-decoration: none;
+}
+
+header.active {
+  display: block;
+}
+
+header.sticky {
+  position: fixed;
+  z-index: 999;
+}
+
+#mobile-menu-open, #mobile-menu-close {
+  display: none;
+  position: fixed;
+  color: #3498db;
+  background: #fff;
+}
+
+#mobile-menu-open {
+  cursor: pointer;
+  right: 15px;
+  top: 10px;
+  font-size: 1.5em;
+  z-index: 20;
+  padding: 0 7px;
   border-radius: 4px;
 }
 
-.btn-rounded-white {
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  border: 2px solid var(--white);
-  border-radius: 30px;
-  background: transparent;
-  color: var(--white);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-top: 20px;
+#mobile-menu-close {
+  text-align: right;
+  width: 100%;
+  font-size: 1.5em;
+  padding: 10px 15px 0 0;
+  cursor: pointer;
 }
 
-.btn-rounded-white:hover {
-  background-color: var(--white);
-  color: var(--primary-color);
+#mobile-menu-close span {
+  font-size: 0.5em;
+  text-transform: uppercase;
 }
 
+#mobile-menu-close i {
+  vertical-align: middle;
+}
+
+/* === Hero Section === */
 #lead {
-  background-color: var(--primary-color) !important;
   position: relative;
   height: 100vh;
-  max-height: 1080px;
-  min-height: 500px;
+  background-color: #3498db !important;
   overflow: hidden;
   padding: 0;
   display: flex;
@@ -88,61 +128,163 @@ header a:hover {
 }
 
 #lead-content {
-  position: absolute;
   z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  color: var(--white);
+  color: white;
 }
 
-.lead-name {
+#lead-content h1 {
   font-size: 5rem;
   font-weight: 900;
-  margin: 0;
-  line-height: 1.1;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
-.lead-title {
-  font-size: 1.5rem;
+#lead-content h2 {
+  font-size: 1.25rem;
   font-weight: 300;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
-@keyframes dropHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-#about img {
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#about p {
-  color: var(--text-muted);
-  margin: 0;
+#lead-content a.btn-rounded-white {
+  display: inline-block;
+  padding: 15px 35px;
+  border: 3px solid white;
+  border-radius: 40px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  .lead-name {
+#lead-content a.btn-rounded-white:hover {
+  background-color: white;
+  color: #3498db;
+}
+
+/* === Buttons === */
+button#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  background-color: #F47174;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+button#myBtn:hover {
+  background-color: #6f7375;
+}
+
+/* === Social Icons === */
+.social {
+  text-align: right;
+}
+
+.social ul {
+  margin: 5px 0 0;
+  padding: 0;
+}
+
+.social li {
+  display: inline-block;
+  font-size: 1.25em;
+  list-style: none;
+}
+
+.social a {
+  display: block;
+  color: #74808a;
+  padding: 10px;
+}
+
+.social a:hover {
+  color: #3498db;
+}
+
+/* === Utilities === */
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow-large {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 30px;
+}
+
+.heading:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 50px;
+  margin: 0 auto;
+  height: 1px;
+  background: #3498db;
+}
+
+.background-alt {
+  background: #f2f2f5;
+}
+
+/* === Responsive Media Queries === */
+@media (max-width: 992px) {
+  #lead-content h1 {
     font-size: 3rem;
   }
-
-  .lead-title {
+  #lead-content h2 {
     font-size: 1rem;
   }
-
-  .btn-rounded-white {
+  #lead-content a.btn-rounded-white {
     padding: 10px 25px;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #lead-content h1 {
+    font-size: 2em;
+  }
+  #lead-content h2 {
+    font-size: 1.3em;
+  }
+  header {
+    position: fixed;
+    bottom: 0;
+    display: none;
+    height: 100%;
+  }
+  #mobile-menu-open, #mobile-menu-close {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  #lead-content h1 {
+    font-size: 1.5em;
+  }
+  #lead-content h2 {
+    font-size: 1em;
   }
 }
