@@ -341,9 +341,9 @@ footer {
 
 #lead-content h2 {
 	margin-bottom: 15px
-	font-size: 1rem;         /* Smaller size */
-  	font-weight: 400;
-  	color: white;            /* Match h1 color */
+	font-size: 1rem;         
+  	font-weight: 200;
+  	color: white;            
   	margin-top: 10px;
 	margin-bottom: 20px;
   	letter-spacing: 0.5px;
@@ -353,6 +353,7 @@ footer {
 #lead-content a.btn-rounded-white {
   margin-top: 10px;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 #lead-overlay {
