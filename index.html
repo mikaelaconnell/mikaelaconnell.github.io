@@ -21,14 +21,16 @@
     VANTA.BIRDS({
       el: "#lead",
       backgroundColor: 0x3498db,   // Bright blue background
-      color1: 0xff1493,            // Hot pink
-      color2: 0xff6600,            // Orange
-      quantity: 4.0,               // Moderate bird count
-      speedLimit: 6.0,             // Slightly more energy
-      cohesion: 2.5,               // LOWER to reduce clumping in middle
-      separation: 50.0,            // HIGHER = birds repel more = spread
-      alignment: 0.3,              // LOWER = more erratic / natural movement
-      backgroundAlpha: 1.0,
+      color1: 0xff1493,              // Hot pink
+      color2: 0xff6600,              // Orange
+      birdSize: 1.5,                 // Slightly larger birds
+      wingSpan: 25.0,                // Wider wing span for more visible flapping
+      speedLimit: 6.5,               // Keeps birds moving more freely
+      separation: 60.0,              // Spread out more
+      cohesion: 1.5,                 // Less cohesion = more wandering
+      alignment: 0.2,                // Less alignment = more natural movement
+      quantity: 4.5,                 // Just the right amount of birds
+      backgroundAlpha: 1.0,          // No transparency
       mouseControls: true,
       touchControls: true,
       minHeight: 200.00,
