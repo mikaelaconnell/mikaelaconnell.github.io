@@ -26,14 +26,12 @@
       backgroundColor: 0x3498db,   // Bright blue background
       color1: 0xff1493,              // Hot pink
       color2: 0xff6600,              // Orange
-      quantity: 4.0,            // Moderate number of birds
+      quantity: 4.0,
+      speedLimit: 5.0,
+      cohesion: 1.0,      // Lower value reduces clustering
+      separation: 50.0,   // Higher value increases spacing
+      alignment: 0.2,     // Lower value for varied movement
       backgroundAlpha: 1.0,
-      birdSize: 1.2,
-      speedLimit: 4.0,          // ⬆️ Faster to keep them in motion
-      separation: 50.0,         // ⬆️ Pushes birds away from each other
-      cohesion: 1.0,            // ⬇️ Less likely to huddle together
-      alignment: 0.2,           // ⬇️ Less synchronized, more natural
-      wingSpan: 20.0,
       mouseControls: true,
       touchControls: true,
       minHeight: 200.00,
