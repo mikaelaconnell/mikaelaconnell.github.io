@@ -1310,3 +1310,14 @@ body {
   font-family: 'Playfair Display', Georgia, serif !important;
 }
 
+/* Force Playfair Display globally */
+body {
+  font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+/* Add a separate font for paragraph*/
+p, li, span {
+  font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+
