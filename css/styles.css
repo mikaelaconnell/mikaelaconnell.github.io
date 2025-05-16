@@ -952,11 +952,58 @@ footer {
 		margin: 0
 	}
 	#about {
-		text-align: left
-	}
-	#about p {
-		text-align: left
-	}
+  padding: 50px 15px;
+  background-color: #f8f8fa;
+  border-bottom: 1px solid #dcd9d9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+#about img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about .about-text {
+  max-width: 600px;
+  color: #5a6674;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+#about .about-text h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #374054;
+  margin-bottom: 15px;
+}
+
+#about .about-text strong {
+  font-weight: 700;
+  color: #374054;
+}
+
+#about .social-icons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#about .social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+#about .social-icons a:hover {
+  color: #ff1493;
+}
+
 
 
 @media only screen and (max-width: 768px) {
