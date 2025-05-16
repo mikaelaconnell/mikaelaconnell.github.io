@@ -1224,7 +1224,7 @@ footer {
 }
 
 #lead {
-  background-color: #3498db; /* Light blue like Sam’s */
+  background-color: #3498db; 
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -1272,9 +1272,4 @@ footer {
   background-color: white;
   color: #3498db;
   text-decoration: none;
-}
-
-h1, h2, h3, .heading {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
 }
