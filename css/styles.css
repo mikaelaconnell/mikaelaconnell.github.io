@@ -1076,3 +1076,48 @@ footer {
 		padding: 5px 10px
 	}
 }
+
+/* --- Custom Enhancements (added 2025-05-16) --- */
+
+/* Improve spacing and readability under lead content */
+#lead-content h2 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+/* Remove underline on resume link */
+#lead-content a.btn-rounded-white {
+  text-decoration: none;
+}
+
+/* Space between button and subtitle */
+#lead-content a.btn-rounded-white {
+  margin-top: 20px;
+}
+
+/* Style About Me image */
+#about img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Center social icons and give color */
+#about td i {
+  color: #9e7cff;
+  transition: color 0.3s ease;
+}
+
+#about td i:hover {
+  color: #ffc0cb;
+}
+
+/* Add a little breathing room above about text */
+#about .col-md-8 p {
+  margin-top: 20px;
+}
+
