@@ -1,8 +1,5 @@
 body {
-	font-family: 'Lato', sans-serif;
-	font-size: 18px
-	line-height: 1.7;
-  	color: #495057;
+  font-family: 'Playfair Display', serif;
 }
 
 body.active {
@@ -1275,4 +1272,9 @@ footer {
   background-color: white;
   color: #3498db;
   text-decoration: none;
+}
+
+h1, h2, h3, .heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
