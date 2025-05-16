@@ -20,9 +20,9 @@
     window.addEventListener('DOMContentLoaded', () => {
       VANTA.BIRDS({
         el: "#lead",
-        backgroundColor: 0x0b0b0b,
+        backgroundColor: 0x3498db,
         color1: 0xffffff,
-        color2: 0x9e7cff,
+        color2: 0xff6f91,
         quantity: 3
       });
     });
@@ -35,63 +35,36 @@
   <script src="https://kit.fontawesome.com/893d34278d.js" crossorigin="anonymous"></script>
 </head>
 
-  <body>
+<body>
   <!-- Vanta Background Wrapper -->
   <div id="lead">
     <div id="lead-content">
-      <h1>Mikaela</h1>
-      <h1>Connell</h1>
-      <h2>Data Scientist</h2>
+      <h1 class="lead-name">Mikaela</h1>
+      <h1 class="lead-name">Connell</h1>
+      <h2 class="lead-title">Data Scientist</h2>
       <a href="assets/Mikaela_Connell_Resume.pdf" target="_blank" class="btn-rounded-white">Resume</a>
     </div>
   </div>
 
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+  <div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <header>
+    <div id="mobile-menu-close">
+      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <!-- 
-             <li>
-                 <a href="https://mikaelaconnell.github.io" class="no-scroll" target="_blank">Blog</a>
-             </li>
-             -->
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+    <ul id="menu" class="shadow">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 
-    <!-- Add button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-   
-    </div>
-
-    </section>
-
-    <div class="top-left">
-              <span id="fps"></span>
-    </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="top-left"><span id="fps"></span></div>
     
     <main>
     <!-- About -->
