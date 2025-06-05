@@ -1,315 +1,306 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>You Should Hire Me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hire Me</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/M.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
-  <link href="css/styles.css" rel="stylesheet">
-  
-  <!-- Bootstrap 4 CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome Free CDN (Latest) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-  .heading-underline {
-    display: inline-block;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-  }
-  </style>
-
-  <!-- Vanta.js + Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-  <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    VANTA.BIRDS({
-      el: "#lead",
-      backgroundColor: 0x3498db,   // Bright blue background
-      color1: 0xff1493,              // Hot pink
-      color2: 0xff6600,              // Orange
-      quantity: 4.0,
-      speedLimit: 5.0,
-      cohesion: 0.8,      // Lower value reduces clustering
-      separation: 90.0,   // Higher value increases spacing
-      alignment: 0.4,     // Lower value for varied movement
-      backgroundAlpha: 1.0,
-      mouseControls: true,
-      touchControls: true,
-      minHeight: 200.00,
-      minWidth: 200.00
-    });
-  });
-</script>
-
-  <!-- Additional JS -->
-  <script src="js/jquery.js"></script>
-  <script src="js/scripts.min.js"></script>
-  <script src="js/to.top.js"></script>
-  <script src="https://kit.fontawesome.com/893d34278d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/6.0.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/M.png">
+    
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/three.r92.min.js"></script>
+    <script src="./js/dat.gui.min.js"></script>
+    <script src="./js/rison.js"></script>
+    <script src="./js/p5.min.js"></script>
+    <script src="./js/gallery.min.js"></script>
+    <script src="./js/vanta.birds.min.js"></script>
+    <script src="https://kit.fontawesome.com/893d34278d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- Vanta Background Wrapper -->
-  <div id="lead">
-    <div id="lead-content">
-      <h1 class="lead-name">Mikaela Connell</h1>
-      <h2 class="lead-title">Data Scientist</h2>
-      <a href="assets/Connell_Resume.pdf" target="_blank" class="btn-rounded-white">Resume</a>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-  </div>
-
-  <div id="mobile-menu-open" class="shadow-large">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </div>
-  <header>
-    <div id="mobile-menu-close">
-      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-    <ul id="menu" class="shadow">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <div class="top-left"><span id="fps"></span></div>
-    
-
- <!-- About Me Section -->
-<section id="about" class="background-alt" style="padding: 80px 0;">
-  <div class="container-fluid px-5">
-
-    <!-- Centered About Me Heading -->
-    <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.5rem; color: #2b2b2b; margin-bottom: 40px;">
-      <span class="heading-underline">About Me</span>
-    </h2>
-
-    <div class="row justify-content-center align-items-start">
-
-      <!-- Left Column: Photo & Icons -->
-      <div class="col-md-5 text-center">
-        <img src="images/mikaela.JPG" class="img-fluid shadow" width="350" alt="Mikaela Connell" style="border-radius: 8px; margin-bottom: 20px;">
-        <div class="mt-4">
-          <a href="https://github.com/mikaelaconnell" target="_blank"><i class="fab fa-github fa-2x mx-3 text-primary"></i></a>
-          <a href="https://www.strava.com/athletes/mikaela_connell" target="_blank"><i class="fab fa-strava fa-2x mx-3" style="color: #fc4c02;"></i></a>
-          <a href="https://linkedin.com/in/mikaelaconnell" target="_blank"><i class="fab fa-linkedin fa-2x mx-3 text-primary"></i></a>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-      </div>
-
-      <!-- Right Column: Bio & News -->
-      <div class="col-md-6 mt-4 mt-md-0">
-
-        <!-- Bio Text -->
-        <p style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #495057; line-height: 1.7;">
-          I am a Data Scientist with a background in economics, healthcare, and data analytics. Based in New York City. Outside of work, I enjoy running (I'm currently training for my first ironman 70.3), cooking, painting, and spending time with my dogs!
-          I am currently seeking roles in Data Analytics and Data Science. 
-        </p>
-
-        <!-- News Heading -->
-        <h4 style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.7rem; margin-top: 30px; margin-bottom: 20px;">
-          Recent News:
-        </h4>
-
-        <!-- News List -->
-        <ul style="font-family: 'Playfair Display', serif; padding-left: 1.7rem; font-size: 1rem; color: #495057;">
-          <li><strong>June 2025</strong> – Beginning a Master's in Data Science at Harvard Extension School </li>
-          <li><strong>May 2025</strong> – Taking courses on Coursera and DeepLearning.AI to strengthen my data science skills</li>
-          <li><strong>April 2025</strong> – Joined Data Annotation as a freelance AI data analyst</li>
-          <li><strong>April 2025</strong> – Built a Bitcoin price prediction <a href="https://btc-price-predictor.streamlit.app/" target="_blank">streamlit dashboard</a></li>
-          <li><strong>Jan 2025</strong> – Began the Data Science Bootcamp at Flatiron School</li>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#projects">Blog Posts</a>
+            </li>
+          
+            <!-- 
+             <li>
+                 <a href="https://mikaelaconnell.github.io" class="no-scroll" target="_blank">Blog</a>
+             </li>
+             -->
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
         </ul>
+    </header>
+    <!-- End header -->
 
-      </div>
+    <!-- Add button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <section id = "wm">
+        <div id="lead">
+
+        <div id="lead-content">
+            <h1>Mikaela Connell</h1>
+            <h2>  </h2>
+            <a href="assets/Connell_Resume.pdf" target = "_blank" class="btn-rounded-white">Industry CV</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="assets/Connell_Resume.pdf" target = "_blank" class="btn-rounded-white">Academic CV</a>
+        </div>
+        <!-- End #lead-content -->
+        
+        
     </div>
-  </div>
-</section>
 
- <section id="experience">
-  <div class="container">
-    <h2 class="section-heading"><span class="heading-underline">Experience</span></h2>
+    </section>
 
-    <div class="timeline">
-
-      <!-- Data Annotation -->
-      <div class="timeline-item">
-        <div class="timeline-date">April 2025 – Present</div>
-        <div class="timeline-content">
-          <h3>Data Annotation</h3>
-          <h4>AI Data Analyst</h4>
-          <ul>
-            <li>Analyzing and annotating datasets to improve large language model performance.</li>
-            <li>Applying structured rubrics to assess model output and ensure quality.</li>
-            <li>Documenting evaluation workflows and supporting feedback loops between data and product teams.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Flatiron School -->
-      <div class="timeline-item">
-        <div class="timeline-date">Jan 2025 – April 2025</div>
-        <div class="timeline-content">
-          <h3>Flatiron School</h3>
-          <h4>Data Science Student</h4>
-          <ul>
-            <li>Completed intensive training in Python, Statistics, Machine Learning, and Data Visualization.</li>
-            <li>Developed machine learning projects to improve patient outcomes and business decisions.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Memorial Sloan Kettering -->
-      <div class="timeline-item">
-        <div class="timeline-date">May 2022 – Dec 2024</div>
-        <div class="timeline-content">
-          <h3>Memorial Sloan Kettering</h3>
-          <h4>Oncology Nurse</h4>
-          <ul>
-            <li>Provided data driven care using EHR systems and patient monitoring tools.</li>
-            <li>Interpreted patient data to inform decision making in acute settings.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- NYU Rory Meyers -->
-      <div class="timeline-item">
-        <div class="timeline-date">Sept 2020 – Dec 2021</div>
-        <div class="timeline-content">
-          <h3>NYU Rory Meyers College of Nursing</h3>
-          <h4>Accelerated BSN</h4>
-          <p>Honors: <em>summa cum laude</em></p>
-        </div>
-      </div>
-
-      <!-- Metric Theory -->
-      <div class="timeline-item">
-        <div class="timeline-date">June 2018 – Sept 2019</div>
-        <div class="timeline-content">
-          <h3>Metric Theory</h3>
-          <h4>Account Manager | Paid Search Analyst</h4>
-          <ul>
-            <li>Managed $1M+ in annual ad spend for DTC and B2B clients.</li>
-            <li>Led campaigns using Google Ads, YouTube, RLSA, and more.</li>
-            <li>Performed audience analysis, back-end data audits, and performance optimization.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Claremont McKenna College -->
-      <div class="timeline-item">
-        <div class="timeline-date">Sept 2014 – May 2018</div>
-        <div class="timeline-content">
-          <h3>Claremont McKenna College</h3>
-          <h4>BA in Economics | Varsity Lacrosse</h4>
-          <ul>
-            <li>Completed CS & math courses: Data Structures, Econometrics, Advanced Programming.</li>
-            <li>Senior thesis in Economics: <a href="https://scholarship.claremont.edu/cmc_theses/1743/" target="_blank">View thesis</a></li>
-          </ul>
-        </div>
-      </div>
-
+    <div class="top-left">
+              <span id="fps"></span>
     </div>
-  </div>
-</section>
+    
+    <!-- End #lead -->
 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure align = 'center'>
+                        
+                            <figcaption><h2 class="heading">About Me</h2></figcaption>
+                   
+                            <img src="images/mikaela.JPG" width = 300 height = 280/>
+                        
+                    </figure>
+                    <br>
+                    <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <td><a href="https://github.com/mikaelaconnell" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          <td><a href="https://www.strava.com/athletes/mikaela_connell" target="_blank"><i class="fab fa-strava fa-2x" aria-hidden="true"></i></a></td>
+                          <td><a href="https://linkedin.com/in/mikaelaconnell" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></td>
+                        </table>
+                    
+                </div>
+
+
+                <div class="col-md-8">
+                    <p>
+                        <br><br><br>
+                        I am a Data Scientist with a background in economics and healthcare. I am currently pursuing my Master's in Data Science
+                        at Harvard. Outside of work, I enjoy running (I am currently training for my first ironman 70.3, cooking, and spending time with my dogs!
+                        I am currently seeking opportunities in data analytics and data science in New York City. 
+                        <br><br>
+                        <strong><font size="+2">Recent News:</font></strong>
+                            <ul>
+                                <li><strong>June 2025</strong> - Beginning a Master's in Data Science at Harvard Extension School
+                                <li><strong>May 2025</strong> - Taking courses on Coursera and DeepLearning.AI to strengthen my data science skills & preparing for the AWS Machine Learning Specialization Exam.
+                                <li><strong>April 2025</strong> - Joined Data Annotation as a freelance AI data analyst
+                                <li><strong>April 2025</strong> - Built a Bitcoin price prediction <a href="https://btc-price-predictor.streamlit.app/" target="_blank">streamlit dashboard</a>
+                                <li><strong>Nov 2021</strong> - I was awarded the Hasso-Plattner Institute (HPI) PhD Fellowship (3 years)
+                                <li><strong>Sep 2020</strong> - Began the Data Science Bootcamp at Flatiron School
+                            </ul>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            
+            <div data-date="April 2025 – Present">
+                <h2><a href="https://www.dataannotation.tech/" target="_blank" ><div class="education-image">
+                    <img src="images/dataannotation.png" width = 200 height = 75/>
+                </div></a></h2>
+                <h3>Data Annotation</h3>
+                <h4>Data Analyst</h4>
+                <p> 
+                    Analyzing and annotating datasets to improve large language model performance.
+                    Applying structured rubrics to assess model output and ensure quality.
+                    Documenting evaluation workflows and supporting feedback loops between data and product teams.
+                </p>
+            </div>
+        
+            <div data-date="Jan 2025 – April 2025">
+                <h2><a href="https://www.flatironschool.com" target="_blank" ><div class="education-image">
+                    <img src="images/flatiron.png" width = 270 height = 75/>
+                </div></a></h2>
+                <h3>Flatiron School</h3>
+                <h4>Data Science Student</h4>
+                <p> 
+                  Completed intensive training in Python, Statistics, Machine Learning, and Data Visualization. 
+                  Developed machine learning projects to improve patient outcomes and business decisions.
+                </p>
+            </div>
+
+
+            <div data-date="May 2022 – Dec 2024">
+                <h2><a href="https://www.amazon.science/" target="_blank" ><div class="education-image">
+                    <img src="images/MSK.png" width = 450 height = 75/>
+                </div></a></h2>
+                <h3>Memorial Sloan Kettering</h3>
+                <h4>Oncology Nurse</h4>
+                <p> 
+                    Provided data driven care using EHR systems and patient monitoring tools.
+                    Interpreted patient data to inform decision making in acute settings.
+                </p>
+            </div>
+
+            <div data-date="September 2020 – December 2021">
+                <h2><a href="https://www.sri.com/" target="_blank" ><div class="education-image">
+                    <img src="images/nyu.png" width = 450 height = 30/>
+                </div></a></h2>
+                <h3>NYU Rory Meyers College of Nursing</h3>
+                <h4>Accelerated Bachelor of Science in Nursing</h4>
+                <p> Honors: <em>summa cum laude</em>
+                </p>
+            </div>
+
+            <div data-date="June 2018 – Sept 2019">
+                <h2><a href="https://www.westmonroepartners.com" target="_blank" ><div class="education-image">
+                    <img src="images/metrictheory.png" width = 260 height = 60/>
+                </div></a></h2>
+                <h3>Metric Theory</h3>
+                <h4>Account Manager | Paid Search Analyst</h4>
+                <p>
+                    Managed $1M+ in annual ad spend for DTC and B2B clients.
+                    Led campaigns using Google Ads, YouTube, RLSA, and more.
+                    Performed audience analysis, back-end data audits, and performance optimization. 
+                </p>
+            </div>
+
+            <div data-date="May 2018 – August 2018">
+                <h2><a href="https://www.nist.gov" target="_blank" ><div class="education-image">
+                    <img src="images/cmc.png" width = 260 height = 60/>
+                </div></a></h2>
+                <h3>Claremont McKenna College</h3>
+                <h4>BA in Economics | Varsity Lacrosse</h4>
+                <p>
+                    Completed CS & math courses: Data Structures, Econometrics, Advanced Programming.
+                    Senior thesis in Economics: <a href="https://scholarship.claremont.edu/cmc_theses/1743/" target="_blank">View thesis</a>
+                </p>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
     <div id="education">
-    <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.5rem; color: #2b2b2b; margin-bottom: 40px;">
-      <span class="heading-underline">Education</span>
-    </h2>
-    <div class="container">
-        <div class="row">
+        <h2 class="heading">Education</h2>
+        <div class="container">
+            <div class = "row">
+                <div class = "education-container shadow-large">
+                    <div class="education-image">
+                                <img src="images/harvard.png" width = 300 height = 300/>
+                    </div>
 
-           <!-- Harvard Extension School -->
-            <div class="education-container shadow-large">
-                <div class="education-image">
-                    <img src="images/harvard.png" width="300" height="300" />
-                </div>
-                <div class="education-block">
-                    <h3>Harvard Extension School</h3>
-                    <span class="education-date">June 2025 – May 2027</span>
-                    <h4>Master's in Data Science</h4>
-                    <p>
-                        This interdisciplinary program combines computer science, statistics, and data analytics to develop advanced skills in data wrangling, machine learning, and data-driven decision making. 
-                        Coursework includes applied machine learning, statistical modeling, and big data tools like Spark and Hadoop. 
-                        The program emphasizes real world problem solving and culminates in a capstone project that applies data science to a practical domain of interest.
-                    </p>
-                </div>
-            </div>
-            <!-- End .education-block -->
-          
-          
-          <!-- Flatiron School -->
-            <div class="education-container shadow-large">
-                <div class="education-image">
-                    <img src="images/flatiron.png" width="300" height="300" />
-                </div>
-                <div class="education-block">
-                    <h3>Flatiron School</h3>
-                    <span class="education-date">December 2024 – April 2025</span>
-                    <h4>Certificate in Data Science</h4>
-                    <p>
-                        Completed a full time immersive bootcamp focused on Python, SQL, machine learning, and statistical analysis. Developed several data science projects including a Bitcoin price prediction model using macroeconomic data, and predictive models in healthcare and automotive domains.
-                    </p>
-                </div>
-            </div>
-            <!-- End .education-block -->
+                    <div class="education-block">
 
-            <!-- New York University -->
-            <div class="education-container shadow-large">
-                <div class="education-image">
-                    <img src="images/nyu.png" width="300" height="300" />
+                        <h3>Harvard Extension School</h3>
+                        <span class="education-date">June 2025 - Present</span>
+                        <h4>Master's in Data Science<br></h4>
+                        <p>
+                            June 2025: Beginning Program <br>
+                            This interdisciplinary program combines computer science, statistics, and data analytics to develop advanced skills in data wrangling, machine learning, and data-driven decision making. 
+                            Coursework includes applied machine learning, statistical modeling, and big data tools like Spark and Hadoop. 
+                            The program emphasizes real world problem solving and culminates in a capstone project that applies data science to a practical domain of interest.
+                        </p>
+                    </div>
                 </div>
-                <div class="education-block">
-                    <h3>New York University</h3>
-                    <span class="education-date">September 2020 – December 2021</span>
-                    <h4>Accelerated Bachelor of Science in Nursing (ABSN)</h4>
-                    <p>
-                        Completed an intensive 15-month accelerated nursing program with clinical rotations across NYC hospitals. Gained frontline experience in patient care, critical thinking, and healthcare systems.
-                    </p>
-                </div>
-            </div>
-            <!-- End .education-block -->
+                <!-- End .education-block -->
 
-            <!-- Claremont McKenna College -->
-            <div class="education-container shadow-large">
-                <div class="education-image">
-                    <img src="images/cmc.png" width="300" height="300" />
-                </div>
-                <div class="education-block">
-                    <h3>Claremont McKenna College</h3>
-                    <span class="education-date">September 2014 – May 2018</span>
-                    <h4>Bachelor of Arts in Economics</h4>
-                    <p>
-                        Studied economics with coursework in statistics, data structures, and advanced math. Served as a student athlete and held internships in finance and marketing. My analytical training at CMC laid the foundation for my transition into data science.
-                    </p>
-                </div>
-            </div>
-            <!-- End .education-block -->
 
+                <div class="education-container shadow-large">
+                    <div class="education-image">
+                            <img src="images/flatiron.png" width = 300 height = 300/>
+                    </div>
+
+                    <div class ="education-block">
+                        <h3>Flatiron School</h3>
+                        <span class="education-date">August 2014 - May 2018</span>
+                        <h4>Certificate in Data Science <br>
+                        Focus on Python and Machine Learning</h4>
+                        <p>
+                            Completed a full time immersive bootcamp focused on Python, SQL, machine learning, and statistical analysis. Developed several data science projects including a Bitcoin price prediction model using macroeconomic data, and predictive models in healthcare and automotive domains. 
+                        </p>
+                    </div>
+                </div>
+        <!-- End .education-block -->
+
+              <div class="education-container shadow-large">
+                    <div class="education-image">
+                            <img src="images/nyu.png" width = 300 height = 300/>
+                    </div>
+
+                    <div class ="education-block">
+                        <h3>New York University</h3>
+                        <span class="education-date">September 2020 - December 2021</span>
+                        <h4> Accelerated Bachelor of Science in Nursing (ABSN) <br>
+                        Honors: summa cum laude</h4>
+                        <p>
+                            Completed an intensive 15-month accelerated nursing program with clinical rotations across NYC hospitals. Gained frontline experience in patient care, critical thinking, and healthcare systems. 
+                        </p>
+                    </div>
+                </div>
+        <!-- End .education-block -->
+
+              <div class="education-container shadow-large">
+                    <div class="education-image">
+                            <img src="images/cmc.png" width = 300 height = 300/>
+                    </div>
+
+                    <div class ="education-block">
+                        <h3>Claremont McKenna College</h3>
+                        <span class="education-date">September 2014 – May 2018</span>
+                        <h4>Bachelor of Arts in Economics <br>
+                        Varsity Lacrosse Student Athlete</h4>
+                        <p>
+                            Studied economics with coursework in statistics, data structures, and advanced math. Served as a student athlete and held internships in finance and marketing. My analytical training at CMC laid the foundation for my transition into data science. 
+                        </p>
+                    </div>
+                </div>
+        <!-- End .education-block -->
+
+            </div>
         </div>
+        
     </div>
-</div>
-<!-- End #education -->
+    <!-- End #education -->
 
 
     <div id="skills">
-        <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.5rem; color: #2b2b2b; margin-bottom: 40px;">
-          <span class="heading-underline">Skills</span>
-        </h2>
+        <h2 class="heading">Skills</h2>
         <ul>
-            <li>Python</li>
+            li>Python</li>
             <li>Java</li>
             <li>SQL</li>
             <li>Machine Learning</li>
@@ -324,23 +315,22 @@
     <!-- End #skills -->
 
     <div id="projects" class="background-alt">
-        <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.5rem; color: #2b2b2b; margin-bottom: 40px;">
-          <span class="heading-underline">Projects</span>
-        </h2>
+        <h2 class="heading">Selected Projects</h2>
         <div class="container">
             <div class="row">
 
-            <!-- MacroBTC Insights -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/bitcoin_dashboard.png" width="400" height="400" />
-                </div>
-                <div class="project-info">
-                    <h3>MacroBTC Insights: Forecasting Bitcoin with Macroeconomic Data</h3>
-                    <p align='left'>
-                        Developed a machine learning forecasting app that predicts Bitcoin prices using macroeconomic indicators such as M2 money supply, CPI, interest rates, and trading volume. Built with XGBoost, the model achieved an R² of 0.91. Integrated the model into a Streamlit dashboard allowing interactive exploration and user-driven predictions.
-                    </p>
-                    <table align='center' style="border-collapse: separate; border-spacing: 20px 0;">
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="bitcoin_dashboard.png" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>MacroBTC Insights: Forecasting Bitcoin with Macroeconomic Data</h3>
+                        <p align = 'left'>
+                          Developed a machine learning forecasting app that predicts Bitcoin prices using macroeconomic indicators such as M2 money supply, CPI, interest rates, and trading volume. Built with XGBoost, the model achieved an R² of 0.91. Integrated the model into a Streamlit dashboard allowing interactive exploration and user-driven predictions.
+                        </p>
+                      <table align='center' style="border-collapse: separate; border-spacing: 20px 0;">
                         <tr>
                             <th>App</th>
                             <th>Code</th>
@@ -350,81 +340,100 @@
                             <td><a href="https://github.com/mikaelaconnell/MacroBTC-Insights" target="_blank"><i class="fab fa-github fa-2x"></i></a></td>
                         </tr>
                     </table>
+                      
+                    </div>
+                    <!-- End .project-info -->
                 </div>
-            </div>
+                <!-- End .project -->
 
-            <!-- Breast Cancer Classifier -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/breast_cancer_m1.png" width="400" height="400" />
-                </div>
-                <div class="project-info">
-                    <h3>Breast Cancer Detection with Machine Learning</h3>
-                    <p align='left'>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/breast_cancer_m1.png" width = 400 height = 400/>
+                    </div>
+                    <!-- End .research-image -->
+                    <div class="project-info">
+                        <h3>Breast Cancer Detection with Machine Learning</h3>
+                        <p align = 'left'>
                         Used classification algorithms including logistic regression and random forest to predict breast cancer diagnoses using the Wisconsin Breast Cancer dataset. Achieved over 95% accuracy. Performed EDA, feature selection, and model tuning to optimize performance. Visualized results using confusion matrices and ROC curves.
-                    </p>
-                    <table align='center' style="border-collapse: separate; border-spacing: 20px 0;">
-                        <tr>
+                        </p>
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
                             <th>Code</th>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/mikaelaconnell/Breast-Cancer-Classifier" target="_blank"><i class="fab fa-github fa-2x"></i></a></td>
-                        </tr>
-                    </table>
+                            <th>Ppt.</th>
+                            <th>Talk</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/SRI-AIC/cameleon" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+
+                            <td><a href="https://docs.google.com/presentation/d/13UdpQdagcTZUTC8rC-FUywYHgWVhyLSLwG36zuFv4WY/edit?usp=sharing" target="_blank"><i class="far fa-file-powerpoint fa-2x" aria-hidden="true"></i></a></td>
+                             <td><a href="https://drive.google.com/file/d/1K04PmX50klLvMKmB4geE2WlMpYBYBYU6/view?usp=sharing" target="_blank"><i class="fas fa-chalkboard-teacher fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <div class = "verticalhorizontal"><img class = 'moveimage' src="images/vehicle_sales_dashboard.png" width = 400, height = 350,  border="0"></div>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Vehicle Sales Trends and Forecasting</h3>
+                        <p align = 'left'>
+                            Conducted time series analysis and forecasting on U.S. vehicle sales data to identify economic trends. Built interactive visualizations with Tableau and used ARIMA models to predict future sales. Insights included seasonality in consumer purchases and correlation with macroeconomic variables like unemployment rate and gas prices.
+                        </p>
+
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/mikaelaconnell/Vehicle-Sales-Analysis" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="lung_cancer_m1.png" width = 400 height = 400/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Lung Cancer Risk Prediction</h3>
+                        <p align = 'left'>
+                            Built a binary classification model to predict lung cancer risk based on health indicators and behavioral features. Conducted preprocessing, balanced class distributions, and evaluated multiple models including SVM and gradient boosting. Final model demonstrated strong performance with clear insights into feature importance. 
+                        </p>
+
+                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
+                          <tr>
+                            <th>Code</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://github.com/mikaelaconnell/Lung-Cancer-Predictor" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
+                          </tr>
+                        </table>
+
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+              
                 </div>
             </div>
-
-            <!-- Vehicle Sales Analysis -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/vehicle_sales_dashboard.png" width="400" height="400" />
-                </div>
-                <div class="project-info">
-                    <h3>Vehicle Sales Trends and Forecasting</h3>
-                    <p align='left'>
-                        Conducted time series analysis and forecasting on U.S. vehicle sales data to identify economic trends. Built interactive visualizations with Tableau and used ARIMA models to predict future sales. Insights included seasonality in consumer purchases and correlation with macroeconomic variables like unemployment rate and gas prices.
-                    </p>
-                    <table align='center' style="border-collapse: separate; border-spacing: 20px 0;">
-                        <tr>
-                            <th>Code</th>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/mikaelaconnell/Vehicle-Sales-Analysis" target="_blank"><i class="fab fa-github fa-2x"></i></a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Lung Cancer Classifier -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/lung_cancer_m1.png" width="400" height="400" />
-                </div>
-                <div class="project-info">
-                    <h3>Lung Cancer Risk Prediction</h3>
-                    <p align='left'>
-                        Built a binary classification model to predict lung cancer risk based on health indicators and behavioral features. Conducted preprocessing, balanced class distributions, and evaluated multiple models including SVM and gradient boosting. Final model demonstrated strong performance with clear insights into feature importance.
-                    </p>
-                    <table align='center' style="border-collapse: separate; border-spacing: 20px 0;">
-                        <tr>
-                            <th>Code</th>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/mikaelaconnell/Lung-Cancer-Predictor" target="_blank"><i class="fab fa-github fa-2x"></i></a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
         </div>
     </div>
-</div>
-                
-  <!-- End #projects -->
-  </main>
+    <!-- End #projects -->
 
-
-<!-- Blog Section -->
+  <!-- Blog Section -->
 <div id="blog" class="background-alt">
   <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.5rem; color: #2b2b2b; margin-bottom: 40px;">
       <span class="heading-underline">Blog</span>
@@ -448,51 +457,52 @@
   </div>
 </div>
 
-  <!-- Contact Section -->
-          
-  <div id="contact">
-    <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.5rem; color: white; margin-bottom: 40px;">
-      <span class="heading-underline">Contact Me!</span>
-    </h2>
-    <div id="contact-form">
-      <form method="POST" action="https://formspree.io/f/myzwlrgn">
-        <input type="hidden" name="_subject" value="Contact request from personal website" />
-        <input type="email" name="_replyto" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 copyright">
-          <p>
-            ❤️ Mikaela Connell
-          </p>
+    <div id="contact">
+        <h2>Contact Me!</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/f/myzwlrgn">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
-        <div class="col-sm-5 social">
-          <ul>
-            <li>
-              <a href="https://github.com/mikaelaconnell" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://www.strava.com/athletes/mikaela_connell" target="_blank"><i class="fab fa-strava" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/mikaelaconnell" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <!-- End #contact-form -->
     </div>
-  </footer>
+    <!-- End #contact -->
 
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/scripts.min.js"></script>
-  <script src="./js/to.top.js"></script>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        ❤️ Mikaela Connell
+                    </p>
+
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/mikaelaconnell" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.strava.com/athletes/mikaela_connell" target="_blank"><i class="fab fa-strava" aria-hidden="true"></i></a>
+                        </li>
+            
+                        <li>
+                            <a href="https://linkedin.com/in/mikaelaconnell" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="./js/to.top.js"></script>
 </body>
+
 </html>
