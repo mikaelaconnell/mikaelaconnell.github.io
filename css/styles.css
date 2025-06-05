@@ -1473,6 +1473,19 @@ p, li, span {
   text-decoration: underline;
 }
 
+.vtimeline-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 3px;
+}
+
+.vtimeline-content h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #495057;
+  margin-bottom: 10px;
+}
 
 
 
