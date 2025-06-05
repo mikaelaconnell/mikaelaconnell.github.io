@@ -564,30 +564,25 @@ footer {
 }
 
 .education-container {
-	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	max-width: 1000px;
 	margin: 0 auto 30px auto;
-	overflow: hidden;
-	background: #fff;
+	background-color: #F7F5F4;
 	border-radius: 4px;
-	background-color: #F7F5F4 /*#eceaea*/
-	
+	padding: 20px;
 }
 
 .education-image {
-	float: left
+	flex: 0 0 300px;
+	padding: 15px;
 }
 
-/*Newly added class*/
-.education-block{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 300px;
-	padding: 15px;
-	/*border: 1px solid #dcd9d9;*/
-	text-align: left
-
+.education-block {
+	flex: 1;
+	padding: 20px;
+	text-align: left;
 }
 
 .education-block h3 {
@@ -624,16 +619,21 @@ footer {
 	padding: 0 0 0 15px
 }
 
-#research {
-	padding: 50px 15px;
-	border-bottom: 1px solid #dcd9d9;
-	text-align: center
+@media only screen and (max-width: 992px) {
+  .education-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-image {
+    display: none;
+  }
+
+  .education-block {
+    padding: 30px 15px;
+  }
 }
 
-#research h2 {
-	color: #374054;
-	margin-bottom: 50px
-}
 
 #projects {
 	padding: 50px 15px;
