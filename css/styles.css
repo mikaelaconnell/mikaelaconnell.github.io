@@ -1328,6 +1328,46 @@ p, li, span {
   margin-bottom: 20px;
   color: #2b2b2b;
 }
+.education-container {
+  display: flex;
+  flex-direction: column; /* stack vertically on all screens */
+  align-items: flex-start;
+  background-color: #F7F5F4;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.education-image {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.education-image img {
+  width: 150px;
+  height: auto;
+}
+.education-block {
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .education-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .education-image {
+    width: 300px;
+    margin: 0 30px 0 0;
+  }
+
+  .education-block {
+    flex: 1;
+    padding: 0;
+  }
+}
 
 
 
