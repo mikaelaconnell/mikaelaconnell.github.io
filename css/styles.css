@@ -1088,3 +1088,18 @@ footer {
   line-height: 1.6;
 }
 
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  margin-right: 20px;
+  color: #2b2b2b;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: #007bff; /* or whatever highlight color you prefer */
+}
+
+
