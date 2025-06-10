@@ -67,24 +67,26 @@
         transform: translate(-50%, -50%);
       }
     }
+    
     .project {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
+      gap: 2rem;
+      align-items: flex-start;
       margin-bottom: 3rem;
     }
+    .project-image {
+      flex: 1 1 300px;
+      max-width: 300px;
+    }
     .project-image img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 10px;
     }
-    .project-image {
-      flex: 1 1 40%;
-      padding: 1rem;
-    }
     .project-info {
-      flex: 1 1 60%;
-      padding: 1rem;
+      flex: 2 1 500px;
     }
     .project-info h3 {
       font-size: 1.5rem;
