@@ -676,20 +676,6 @@ footer {
 	transform: none
 }
 
-#more-projects {
-	padding: 0px 15px;
-	border-bottom: 1px solid #dcd9d9;
-	text-align: center;
-	display: none
-}
-
-#more-research {
-	padding: 0px 15px;
-	border-bottom: 1px solid #dcd9d9;
-	text-align: center;
-	display: none
-}
-
 
 
 #skills {
@@ -1051,20 +1037,19 @@ footer {
 }
 
 
-	.project {
+.project {
   display: flex;
-  flex-wrap: wrap; /* allows wrapping on small screens */
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
+
 .project-image {
-  flex: 0 0 300px; /* fixed width image */
-  text-align: center;
+  flex: 1 1 300px;
+  max-width: 300px;
 }
 
 .project-image img {
@@ -1074,8 +1059,7 @@ footer {
 }
 
 .project-info {
-  flex: 1;
-  text-align: left;
+  flex: 2 1 500px;
 }
 
 .project-info h3 {
