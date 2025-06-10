@@ -1040,3 +1040,6 @@ footer {
 		padding: 5px 10px
 	}
 }
+#lead {
+  height: 100vh;
+}
