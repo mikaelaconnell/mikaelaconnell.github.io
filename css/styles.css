@@ -1043,3 +1043,10 @@ footer {
 #lead {
   height: 100vh;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
