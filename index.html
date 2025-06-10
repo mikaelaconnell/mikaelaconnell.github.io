@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hire Me</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mikaela Connell</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/6.0.0/css/font-awesome.min.css">
-    <link rel="icon" href="images/M.png">
-    
-    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="./js/jquery.js"></script>
-    <script src="./js/three.r92.min.js"></script>
-    <script src="./js/dat.gui.min.js"></script>
-    <script src="./js/rison.js"></script>
-    <script src="./js/p5.min.js"></script>
-    <script src="./js/gallery.min.js"></script>
-    <script src="./js/vanta.birds.min.js"></script>
-    <script src="https://kit.fontawesome.com/893d34278d.js" crossorigin="anonymous"></script>
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="icon" href="images/M.png" />
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/to.top.js"></script>
+
+  <!-- Vanta Initialization -->
+  <style>
+    #lead {
+      height: 100vh;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      VANTA.BIRDS({
+        el: "#lead",
+        backgroundColor: 0x1e3a8a,
+        color1: 0xffffff,
+        color2: 0x60a5fa,
+        birdSize: 1.5,
+        wingSpan: 25,
+        speedLimit: 4.0,
+        separation: 50.0,
+        alignment: 50.0,
+        cohesion: 20.0,
+        quantity: 3
+      });
+    });
+  </script>
 </head>
 
 <body>
