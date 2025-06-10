@@ -66,6 +66,35 @@
         transform: translate(-50%, -50%);
       }
     }
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .project-image {
+      flex: 1 1 40%;
+      padding: 1rem;
+    }
+    .project-info {
+      flex: 1 1 60%;
+      padding: 1rem;
+    }
+    .project-info h3 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .project-links {
+      margin-top: 1rem;
+    }
+    .project-links a {
+      margin-right: 1rem;
+    }
   </style>
 </head>
 
@@ -346,7 +375,7 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            li>Python</li>
+            <li>Python</li>
             <li>Java</li>
             <li>SQL</li>
             <li>Machine Learning</li>
