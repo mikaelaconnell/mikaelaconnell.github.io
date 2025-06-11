@@ -1086,4 +1086,69 @@ footer {
   color: #007bff; /* or whatever highlight color you prefer */
 }
 
+/* ABOUT SECTION STYLES */
+.about-section {
+  padding: 80px 0;
+  background-color: #f8f9fb;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.heading.text-center {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #2c2c54;
+  margin-bottom: 40px;
+}
+
+.about-photo {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a {
+  margin: 0 12px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a .fa-github {
+  color: #333;
+}
+
+.social-icons a .fa-strava {
+  color: #fc4c02;
+}
+
+.social-icons a .fa-linkedin {
+  color: #0077b5;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+.recent-news-title {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #2c2c54;
+}
+
+.recent-news-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.recent-news-list li {
+  margin-bottom: 12px;
+}
+
+
 
