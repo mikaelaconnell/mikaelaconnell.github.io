@@ -12,8 +12,6 @@
 
   <!-- Your custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 
   <style>
     html, body {
@@ -69,7 +67,6 @@
         transform: translate(-50%, -50%);
       }
     }
-    
     .project {
       display: flex;
       flex-direction: row;
@@ -100,16 +97,76 @@
     .project-links a {
       margin-right: 1rem;
     }
+    .about-section {
+      padding: 80px 0;
+      background-color: #ffffff;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #2c2c54;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #4a6fdc;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+    .profile-image {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 26px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .social-icons a:hover {
+      transform: scale(1.15);
+    }
+    .social-icons .fa-github {
+      color: #333;
+    }
+    .social-icons .fa-strava {
+      color: #fc4c02;
+    }
+    .social-icons .fa-linkedin {
+      color: #0077b5;
+    }
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.75;
+      color: #444;
+    }
+    .recent-news-title {
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #2c2c54;
+    }
+    .recent-news-list {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .recent-news-list li {
+      margin-bottom: 12px;
+      font-size: 17px;
+      color: #333;
+    }
   </style>
 </head>
-
 <body>
-  <!-- Mobile menu toggle -->
   <div id="mobile-menu-open" class="shadow-large">
     <i class="fa fa-bars" aria-hidden="true"></i>
   </div>
-
-  <!-- Header with nav menu -->
   <header>
     <div id="mobile-menu-close">
       <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
@@ -125,7 +182,6 @@
     </ul>
   </header>
 
-  <!-- Hero Section -->
   <section id="lead">
     <div id="lead-content">
       <h1>Mikaela Connell</h1>
@@ -134,7 +190,6 @@
     </div>
   </section>
 
-  <!-- JavaScript dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r92/three.min.js"></script>
   <script src="js/vanta.birds.min.js"></script>
   <script>
@@ -150,64 +205,50 @@
           minWidth: 200.00,
           scale: 1.00,
           scaleMobile: 1.00,
-          backgroundColor: 0x2d9cdb,  // brighter blue (Sky Blue)
-          color1: 0xcc3300,           // orangey red
-          color2: 0x87cefa,           // light sky blue
-          quantity: 5.00              // medium amount of birds
+          backgroundColor: 0x2d9cdb,
+          color1: 0xcc3300,
+          color2: 0x87cefa,
+          quantity: 5.00
         });
       } else {
         document.getElementById("lead").style.backgroundColor = "#b3d9ff";
       }
     });
-  </script> 
-  
-  <div class="top-left">
-              <span id="fps"></span>
-    </div>
-    
-    <!-- End #lead -->
+  </script>
 
   <!-- About Me Section -->
-<div id="about" class="about-section">
-  <div class="container">
-    <h2 class="section-title text-center">About Me</h2>
-
-    <div class="row align-items-center">
-      <!-- LEFT COLUMN -->
-      <div class="col-md-4 text-center">
-        <img src="images/mikaela.JPG" alt="Mikaela Connell" class="profile-image">
-        <div class="social-icons mt-3">
-          <a href="https://github.com/mikaelaconnell" target="_blank" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://www.strava.com/athletes/mikaela_connell" target="_blank" title="Strava"><i class="fab fa-strava fa-2x"></i></a>
-          <a href="https://linkedin.com/in/mikaelaconnell" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+  <div id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title text-center">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="images/mikaela.JPG" alt="Mikaela Connell" class="profile-image">
+          <div class="social-icons mt-3">
+            <a href="https://github.com/mikaelaconnell" target="_blank" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.strava.com/athletes/mikaela_connell" target="_blank" title="Strava"><i class="fab fa-strava fa-2x"></i></a>
+            <a href="https://linkedin.com/in/mikaelaconnell" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
         </div>
-      </div>
-
-      <!-- RIGHT COLUMN -->
-      <div class="col-md-8">
-        <div class="about-text">
-          <p>
-            I am a Data Scientist with a background in economics and healthcare. I am currently pursuing my Master's in Data Science at Harvard. 
-            Outside of work, I enjoy running (currently training for my first Ironman 70.3), cooking, and spending time with my dogs.
-            I’m actively seeking opportunities in data analytics and data science in New York City.
-          </p>
-
-          <h3 class="recent-news-title">Recent News:</h3>
-          <ul class="recent-news-list">
-            <li><strong>June 2025</strong> – Beginning a Master's in Data Science at Harvard Extension School</li>
-            <li><strong>May 2025</strong> – Taking courses on Coursera and DeepLearning.AI to strengthen my data science skills & preparing for the AWS Machine Learning Specialization Exam</li>
-            <li><strong>April 2025</strong> – Joined Data Annotation as a freelance AI data analyst</li>
-            <li><strong>April 2025</strong> – Built a Bitcoin price prediction <a href="https://btc-price-predictor.streamlit.app/" target="_blank">streamlit dashboard</a></li>
-            <li><strong>January 2025</strong> – Began the Data Science Bootcamp at Flatiron School</li>
-          </ul>
+        <div class="col-md-8">
+          <div class="about-text">
+            <p>
+              I am a Data Scientist with a background in economics and healthcare. I am currently pursuing my Master's in Data Science at Harvard. 
+              Outside of work, I enjoy running (currently training for my first Ironman 70.3), cooking, and spending time with my dogs.
+              I’m actively seeking opportunities in data analytics and data science in New York City.
+            </p>
+            <h3 class="recent-news-title">Recent News:</h3>
+            <ul class="recent-news-list">
+              <li><strong>June 2025</strong> – Beginning a Master's in Data Science at Harvard Extension School</li>
+              <li><strong>May 2025</strong> – Taking courses on Coursera and DeepLearning.AI to strengthen my data science skills & preparing for the AWS Machine Learning Specialization Exam</li>
+              <li><strong>April 2025</strong> – Joined Data Annotation as a freelance AI data analyst</li>
+              <li><strong>April 2025</strong> – Built a Bitcoin price prediction <a href="https://btc-price-predictor.streamlit.app/" target="_blank">streamlit dashboard</a></li>
+              <li><strong>January 2025</strong> – Began the Data Science Bootcamp at Flatiron School</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
-
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
