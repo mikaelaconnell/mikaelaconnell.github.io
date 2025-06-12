@@ -1230,5 +1230,115 @@ footer {
   margin-bottom: 12px;
 }
 
+/* About Section Container */
+.about-section {
+  padding: 80px 0;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #2c2c54;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  text-align: center;
+}
+
+/* Profile Image (better desktop sizing) */
+.profile-image {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons .fa-github {
+  color: #333;
+}
+
+.social-icons .fa-strava {
+  color: #fc4c02;
+}
+
+.social-icons .fa-linkedin {
+  color: #0077b5;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Bio Text */
+.about-text {
+  font-size: 18px;
+  line-height: 1.75;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Recent News */
+.recent-news-title {
+  font-size: 22px;
+  margin-top: 30px;
+  color: #2c2c54;
+}
+
+.recent-news-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.recent-news-list li {
+  margin-bottom: 12px;
+}
+
+/* Responsive Tweaks for Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .profile-image {
+    max-width: 160px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    font-size: 22px;
+    margin: 0 8px;
+  }
+}
+
 
 
