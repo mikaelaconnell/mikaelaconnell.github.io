@@ -1565,6 +1565,38 @@ footer {
   color: #555;
 }
 
+.timeline-entry {
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+
+.timeline-entry h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.timeline-entry h3 a {
+  text-decoration: none;
+  color: #222;
+}
+
+.timeline-entry h3 a:hover {
+  text-decoration: underline;
+}
+
+.timeline-entry h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.timeline-entry p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
 
 
 
