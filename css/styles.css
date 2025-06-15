@@ -1598,6 +1598,14 @@ footer {
 }
 
 
+.timeline-entry h4 {
+  font-size: 1.1rem;
+  font-weight: 700;        /* Make it bold */
+  color: #222;             /* Darker text */
+  margin-bottom: 10px;
+}
+
+
 
 
 
