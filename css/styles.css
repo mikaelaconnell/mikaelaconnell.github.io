@@ -1762,6 +1762,46 @@ footer {
   }
 }
 
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  max-height: 180px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-links {
+  margin-top: 12px;
+}
+
+.project-links i {
+  margin-right: 16px;
+  color: #2d9cdb;
+  transition: transform 0.2s ease;
+}
+
+.project-links i:hover {
+  transform: scale(1.15);
+}
+
+
 
 
 
