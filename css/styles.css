@@ -1668,6 +1668,12 @@ footer {
   color: #333;
 }
 
+.experience-organization {
+  display: block !important;
+  visibility: visible !important;
+}
+
+
 
 
 
