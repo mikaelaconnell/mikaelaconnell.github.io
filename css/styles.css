@@ -1818,6 +1818,30 @@ footer {
   width: auto;
 }
 
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill-badge {
+  display: inline-block;
+  background-color: #e0e7ff;
+  color: #2d2d2d;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: #c7d2fe;
+}
+
 
 
 
