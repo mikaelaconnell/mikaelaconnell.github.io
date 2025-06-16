@@ -1606,6 +1606,30 @@ footer {
 }
 
 
+.experience-organization {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.experience-organization a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.experience-organization a:hover {
+  text-decoration: underline;
+}
+
+.experience-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
 
 
 
