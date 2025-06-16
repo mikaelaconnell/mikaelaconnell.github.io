@@ -251,120 +251,82 @@
   </div>
   <!-- End About Me Section -->
 
- <div id="projects" class="background-alt">
-        <h2 class="heading">Selected Projects</h2>
-        <div class="container">
-            <div class="row">
+   <!-- Projects Section -->
+  <div id="projects" class="background-alt">
+  <div class="container">
+    <h2 class="section-title text-center">Selected Projects</h2>
 
-
-                <div class="project shadow-large">
-                  <div class="project-image">
-                    <img src="images/bitcoin_dashboard.png" alt="Bitcoin Dashboard">
-                  </div>
-                  <div class="project-info">
-                    <h3>MacroBTC Insights: Forecasting Bitcoin with Macroeconomic Data</h3>
-                    <p>
-                        Developed a machine learning forecasting app that predicts Bitcoin prices using macroeconomic indicators such as M2 money supply, CPI, interest rates, and trading volume. Built with XGBoost, the model achieved an R² of 0.91 and is deployed on Streamlit.
-                    </p>
-                    <div class="project-links">
-                      <a href="https://macrobtc-insights.streamlit.app/" target="_blank" title="Launch App">
-                          <i class="fas fa-globe fa-2x"></i>
-                      </a>
-                      <a href="https://github.com/mikaelaconnell/MacroBTC-Insights" target="_blank" title="View Code">
-                          <i class="fab fa-github fa-2x"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/breast_cancer_m1.png" width = 400 height = 400/>
-                    </div>
-                    <!-- End .research-image -->
-                    <div class="project-info">
-                        <h3>Breast Cancer Detection with Machine Learning</h3>
-                        <p align = 'left'>
-                        Used classification algorithms including logistic regression and random forest to predict breast cancer diagnoses using the Wisconsin Breast Cancer dataset. Achieved over 95% accuracy. Performed EDA, feature selection, and model tuning to optimize performance. Visualized results using confusion matrices and ROC curves.
-                        </p>
-                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
-                          <tr>
-                            <th>Code</th>
-                            <th>Ppt.</th>
-                            <th>Talk</th>
-                          </tr>
-                          <tr>
-                            <td><a href="https://github.com/SRI-AIC/cameleon" target="_blank" align = 'right' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
-
-                            <td><a href="https://docs.google.com/presentation/d/13UdpQdagcTZUTC8rC-FUywYHgWVhyLSLwG36zuFv4WY/edit?usp=sharing" target="_blank"><i class="far fa-file-powerpoint fa-2x" aria-hidden="true"></i></a></td>
-                             <td><a href="https://drive.google.com/file/d/1K04PmX50klLvMKmB4geE2WlMpYBYBYU6/view?usp=sharing" target="_blank"><i class="fas fa-chalkboard-teacher fa-2x" aria-hidden="true"></i></a></td>
-                          </tr>
-                        </table>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <div class = "verticalhorizontal"><img class = 'moveimage' src="images/vehicle_sales_dashboard.png" width = 400, height = 350,  border="0"></div>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Vehicle Sales Trends and Forecasting</h3>
-                        <p align = 'left'>
-                            Conducted time series analysis and forecasting on U.S. vehicle sales data to identify economic trends. Built interactive visualizations with Tableau and used ARIMA models to predict future sales. Insights included seasonality in consumer purchases and correlation with macroeconomic variables like unemployment rate and gas prices.
-                        </p>
-
-                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
-                          <tr>
-                            <th>Code</th>
-                          </tr>
-                          <tr>
-                            <td><a href="https://github.com/mikaelaconnell/Vehicle-Sales-Analysis" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
-                          </tr>
-                        </table>
-
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/lung_cancer_m1.png" width = 400 height = 400/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Lung Cancer Risk Prediction</h3>
-                        <p align = 'left'>
-                            Built a binary classification model to predict lung cancer risk based on health indicators and behavioral features. Conducted preprocessing, balanced class distributions, and evaluated multiple models including SVM and gradient boosting. Final model demonstrated strong performance with clear insights into feature importance. 
-                        </p>
-
-                        <table align = 'center' style="border-collapse: separate; border-spacing: 20px 0;" >
-                          <tr>
-                            <th>Code</th>
-                          </tr>
-                          <tr>
-                            <td><a href="https://github.com/mikaelaconnell/Lung-Cancer-Predictor" align = 'right' target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></td>
-                          </tr>
-                        </table>
-
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-              
-                </div>
-            </div>
+    <!-- Project: MacroBTC -->
+    <div class="project-card row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="images/bitcoin_dashboard.png" alt="Bitcoin Dashboard" class="project-img img-fluid rounded">
+      </div>
+      <div class="col-md-8">
+        <h3>MacroBTC Insights: Forecasting Bitcoin</h3>
+        <p>
+          Developed a machine learning forecasting app that predicts Bitcoin prices using macroeconomic indicators like M2 money supply, CPI, interest rates, and trading volume. Built with XGBoost and deployed on Streamlit. Achieved R² of 0.91.
+        </p>
+        <div class="project-links">
+          <a href="https://macrobtc-insights.streamlit.app/" target="_blank" title="Launch App"><i class="fas fa-globe fa-2x"></i></a>
+          <a href="https://github.com/mikaelaconnell/MacroBTC-Insights" target="_blank" title="View Code"><i class="fab fa-github fa-2x"></i></a>
         </div>
+      </div>
     </div>
-    <!-- End #projects -->
-  
+
+    <!-- Project: Breast Cancer -->
+    <div class="project-card row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="images/breast_cancer_m1.png" alt="Breast Cancer Project" class="project-img img-fluid rounded">
+      </div>
+      <div class="col-md-8">
+        <h3>Breast Cancer Detection with Machine Learning</h3>
+        <p>
+          Used logistic regression and random forest to predict breast cancer diagnoses using the Wisconsin dataset. Achieved 95%+ accuracy, used ROC curves and confusion matrices, and tuned model hyperparameters.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/SRI-AIC/cameleon" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://docs.google.com/presentation/d/13UdpQdagcTZUTC8rC-FUywYHgWVhyLSLwG36zuFv4WY/edit?usp=sharing" target="_blank"><i class="far fa-file-powerpoint fa-2x"></i></a>
+          <a href="https://drive.google.com/file/d/1K04PmX50klLvMKmB4geE2WlMpYBYBYU6/view?usp=sharing" target="_blank"><i class="fas fa-chalkboard-teacher fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project: Vehicle Sales -->
+    <div class="project-card row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="images/vehicle_sales_dashboard.png" alt="Vehicle Sales" class="project-img img-fluid rounded">
+      </div>
+      <div class="col-md-8">
+        <h3>Vehicle Sales Trends and Forecasting</h3>
+        <p>
+          Conducted time series analysis and forecasting on U.S. vehicle sales data to identify economic trends. Built interactive visualizations with Tableau and used ARIMA models to predict future sales. Insights included seasonality and macroeconomic correlations.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/mikaelaconnell/Vehicle-Sales-Analysis" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project: Lung Cancer -->
+    <div class="project-card row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="images/lung_cancer_m1.png" alt="Lung Cancer Risk Prediction" class="project-img img-fluid rounded">
+      </div>
+      <div class="col-md-8">
+        <h3>Lung Cancer Risk Prediction</h3>
+        <p>
+          Built a binary classification model to predict lung cancer risk based on health indicators and behavioral features. Used SVM and gradient boosting. Final model showed strong performance and clear feature importance insights.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/mikaelaconnell/Lung-Cancer-Predictor" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ 
 <!-- Education Section -->
 <div id="education" class="background-alt">
   <div class="container">
