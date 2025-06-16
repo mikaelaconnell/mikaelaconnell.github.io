@@ -1674,6 +1674,47 @@ footer {
 }
 
 
+.edu-logo {
+  max-height: 120px;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.education-container h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.education-container h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.edu-subtitle {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.education-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .edu-logo {
+    max-height: 80px;
+    margin-bottom: 15px;
+  }
+}
+
+
 
 
 
