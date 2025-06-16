@@ -1714,6 +1714,55 @@ footer {
   }
 }
 
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.edu-logo {
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.edu-logo-wrap {
+  flex: 0 0 150px;
+  padding: 10px;
+  text-align: center;
+}
+
+.edu-content {
+  flex: 1;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edu-logo-wrap,
+  .edu-content {
+    flex: 1 0 100%;
+    padding: 10px 0;
+  }
+
+  .edu-content {
+    padding: 10px 15px;
+    text-align: left;
+  }
+}
+
+
 
 
 
