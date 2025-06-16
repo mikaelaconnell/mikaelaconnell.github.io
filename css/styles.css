@@ -1802,6 +1802,23 @@ footer {
 }
 
 
+.edu-logo {
+  max-height: 100px; /* reduce from previous 120px */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.edu-logo {
+  max-width: 100%;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+}
+
+
 
 
 
