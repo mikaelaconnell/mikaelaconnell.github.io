@@ -1629,12 +1629,43 @@ footer {
   margin-bottom: 10px;
 }
 
-
 .experience-title {
   font-size: 1.15rem !important;
   font-weight: 700 !important;
   color: #111 !important;
   margin-bottom: 12px !important;
+}
+
+
+.timeline-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.experience-organization {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.experience-organization a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.experience-organization a:hover {
+  text-decoration: underline;
+}
+
+.experience-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 
