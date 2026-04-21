@@ -2,11 +2,11 @@ import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaStrava } from "react-icons/fa";
 
 const navLinks = [
-  { href: "/the-filo", label: "The Filo" },
-  { href: "/reen", label: "Reen" },
-  { href: "/essays", label: "Essays" },
   { href: "/projects", label: "Projects" },
   { href: "/experience", label: "Experience" },
+  { href: "/essays", label: "Essays" },
+  { href: "/reen", label: "Reen" },
+  { href: "/the-filo", label: "The Filo" },
 ];
 
 const socialLinks = [
@@ -63,9 +63,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right area — nav links spread across the top */}
+        {/* Right area — nav links across the top */}
         <div className="flex-1">
-          <nav className="flex justify-between">
+          <nav className="flex gap-8 lg:gap-10">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
