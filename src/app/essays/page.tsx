@@ -1,0 +1,38 @@
+import Footer from "@/components/Footer";
+
+const essays = [
+  {
+    date: "Apr 2026",
+    title: "On Building While Becoming",
+    href: "/essays/building-while-becoming",
+  },
+  {
+    date: "Jan 2026",
+    title: "Why Femtech Needs Better Engineering",
+    href: "/essays/femtech-engineering",
+  },
+];
+
+export default function EssaysPage() {
+  return (
+    <div>
+      <h2 className="text-xl tracking-wide mb-8">Essays</h2>
+      <ul className="space-y-3">
+        {essays.map((essay) => (
+          <li key={essay.title} className="flex items-baseline gap-4">
+            <span className="text-xs tracking-widest text-muted whitespace-nowrap">
+              {essay.date}
+            </span>
+            <a
+              href={essay.href}
+              className="text-sm tracking-wide hover:text-gray-600 transition-colors"
+            >
+              {essay.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <Footer />
+    </div>
+  );
+}
