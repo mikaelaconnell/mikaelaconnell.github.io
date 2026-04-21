@@ -4,16 +4,13 @@ export default function Footer() {
       <p>
         For inquiries please contact{" "}
         <a
-          href="mailto:mikaela@mikaelaconnell.com"
+          href="mailto:mikaelaconnell14@gmail.com"
           className="hover:text-foreground"
         >
-          mikaela@mikaelaconnell.com
+          mikaelaconnell14@gmail.com
         </a>
       </p>
-      <p className="mt-2">
-        Views expressed are my own and do not represent those of my employer.
-      </p>
-      <p className="mt-2">&copy; {new Date().getFullYear()} Mikaela Connell.</p>
+<p className="mt-2">&copy; {new Date().getFullYear()} Mikaela Connell.</p>
     </footer>
   );
 }
