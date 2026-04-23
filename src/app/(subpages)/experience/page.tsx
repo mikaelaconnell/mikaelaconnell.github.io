@@ -6,7 +6,7 @@ const work = [
     company: "Data Piper",
     period: "Present",
     description:
-      "Google Cloud consulting — architecting AI systems for enterprise clients. Current projects include a veterinary dictation-to-structured-data engine, an AI-powered industrial inspection system, and document processing SaaS. Work spans computer vision, NLP, agentic pipelines, and cloud infrastructure.",
+      "Google Cloud consulting — architecting AI systems for enterprise clients. Current projects include an animal recognition system, a veterinary dictation engine, an industrial inspection platform, and document processing SaaS. Work spans computer vision, NLP, agentic pipelines, and cloud infrastructure.",
   },
   {
     role: "Founder",
