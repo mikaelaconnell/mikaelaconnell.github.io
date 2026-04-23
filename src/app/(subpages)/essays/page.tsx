@@ -1,6 +1,13 @@
+import Link from "next/link";
 import Footer from "@/components/Footer";
 
 const essays = [
+  {
+    date: "Apr 2026",
+    title:
+      "The Diagnosis Gap: Why Women's Health Needs Better Data Before Better Algorithms",
+    href: "/essays/diagnosis-gap",
+  },
   {
     date: "Apr 2026",
     title: "On Building While Becoming",
@@ -23,12 +30,12 @@ export default function EssaysPage() {
             <span className="text-xs tracking-widest text-muted whitespace-nowrap">
               {essay.date}
             </span>
-            <a
+            <Link
               href={essay.href}
               className="text-sm tracking-wide hover:text-gray-600 transition-colors"
             >
               {essay.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

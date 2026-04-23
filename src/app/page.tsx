@@ -63,9 +63,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right area — nav links across the top */}
+        {/* Right area — nav links spread evenly across the top */}
         <div className="flex-1">
-          <nav className="flex gap-8 lg:gap-10">
+          <nav className="flex justify-between">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
@@ -80,22 +80,25 @@ export default function Home() {
       </div>
 
       {/* Bottom footer */}
-      <footer className="flex items-end justify-between mt-12">
-        <div className="text-xs tracking-wide text-muted space-y-1">
-          <p>
-            For inquiries please contact{" "}
-            <a
-              href="mailto:mikaelaconnell14@gmail.com"
-              className="hover:text-foreground transition-colors"
-            >
-              mikaelaconnell14@gmail.com
-            </a>
+      <footer className="mt-auto pt-24">
+        <hr className="border-t border-gray-300 mb-6" />
+        <div className="flex items-end justify-between">
+          <div className="text-xs tracking-wide text-muted space-y-1">
+            <p>
+              For inquiries please contact{" "}
+              <a
+                href="mailto:mikaelaconnell14@gmail.com"
+                className="hover:text-foreground transition-colors"
+              >
+                mikaelaconnell14@gmail.com
+              </a>
+            </p>
+            <p className="mt-3 text-foreground text-sm font-medium">Mikaela Connell</p>
+          </div>
+          <p className="text-xs tracking-wide text-muted">
+            &copy; {new Date().getFullYear()} Mikaela Connell.
           </p>
-          <p className="mt-3 text-foreground">Mikaela Connell</p>
         </div>
-        <p className="text-xs tracking-wide text-muted">
-          &copy; {new Date().getFullYear()} Mikaela Connell.
-        </p>
       </footer>
     </div>
   );

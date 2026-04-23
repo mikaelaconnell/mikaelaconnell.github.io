@@ -6,10 +6,10 @@ const work = [
     company: "Data Piper",
     period: "Present",
     description:
-      "Google Cloud consulting — architecting AI systems for enterprise clients including document processing, computer vision, and agentic pipelines.",
+      "Google Cloud consulting — architecting AI systems for enterprise clients. Current projects include a veterinary dictation-to-structured-data engine, an AI-powered industrial inspection system, and document processing SaaS. Work spans computer vision, NLP, agentic pipelines, and cloud infrastructure.",
   },
   {
-    role: "Founder & CEO",
+    role: "Founder",
     company: "Reen",
     period: "Present",
     description:
@@ -27,7 +27,11 @@ const work = [
 const education = [
   {
     school: "Harvard Extension School",
-    degree: "AI & Machine Learning",
+    degree: "M.S. in Data Science",
+  },
+  {
+    school: "Claremont McKenna College",
+    degree: "B.A. in Economics",
   },
 ];
 
