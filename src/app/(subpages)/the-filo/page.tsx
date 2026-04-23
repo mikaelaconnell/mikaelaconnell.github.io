@@ -11,6 +11,12 @@ export default function TheFiloPage() {
           with purpose.
         </p>
         <p>
+          The Filo also offers an AI-powered event planning service. Connect
+          your Pinterest board and the tool will analyze your inspiration to
+          create a complete vision and execution plan for your event, from
+          styling and decor to logistics and vendor recommendations.
+        </p>
+        <p>
           <a
             href="https://the-filo.vercel.app"
             target="_blank"
