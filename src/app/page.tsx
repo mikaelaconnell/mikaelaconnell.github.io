@@ -2,8 +2,8 @@ import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaStrava } from "react-icons/fa";
 
 const navLinks = [
-  { href: "/projects", label: "Projects" },
   { href: "/experience", label: "Experience" },
+  { href: "/projects", label: "Projects" },
   { href: "/essays", label: "Essays" },
   { href: "/reen", label: "Reen" },
   { href: "/the-filo", label: "The Filo" },
@@ -37,14 +37,18 @@ export default function Home() {
           <h1 className="text-lg tracking-wide leading-snug mb-8">
             Mikaela Connell
           </h1>
-          <div className="space-y-6 text-sm leading-relaxed tracking-wide max-w-[200px]">
+          <div className="space-y-6 text-sm leading-relaxed tracking-wide max-w-[220px]">
             <p>
-              I am a machine learning engineer. I work on AI, cloud infrastructure, and
-              products. I also build companies, starting with my own.
+              I am a machine learning engineer building AI systems, cloud
+              infrastructure, and products at Data Piper, a Google Cloud
+              consulting firm. I am passionate about women&apos;s healthcare
+              and founded Reen, an AI healthcare company.
             </p>
             <p>
-              I studied at Harvard Extension, concentrating in AI and machine
-              learning. I am a New Yorker, an entrepreneur, and a builder.
+              I am pursuing a Master&apos;s in Data Science at Harvard
+              Extension School and hold a B.A. in Economics from Claremont
+              McKenna College. I am a New Yorker, an entrepreneur, and a
+              builder.
             </p>
           </div>
           <div className="flex gap-3 mt-8">

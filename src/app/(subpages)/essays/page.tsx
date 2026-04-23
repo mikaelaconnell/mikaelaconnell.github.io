@@ -8,16 +8,6 @@ const essays = [
       "The Diagnosis Gap: Why Women's Health Needs Better Data Before Better Algorithms",
     href: "/essays/diagnosis-gap",
   },
-  {
-    date: "Apr 2026",
-    title: "On Building While Becoming",
-    href: "/essays/building-while-becoming",
-  },
-  {
-    date: "Jan 2026",
-    title: "Why Femtech Needs Better Engineering",
-    href: "/essays/femtech-engineering",
-  },
 ];
 
 export default function EssaysPage() {
