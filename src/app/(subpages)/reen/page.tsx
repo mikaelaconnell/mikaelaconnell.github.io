@@ -8,7 +8,7 @@ export default function ReenPage() {
         <p>
           Reen is an AI-powered hormonal health platform built for women, by
           women. It combines self-reported symptoms, cycle data, wearable
-          biometrics, and lab results to deliver personalized insights — giving
+          biometrics, and lab results to deliver personalized insights, giving
           women the clarity and evidence they need to advocate for themselves.
         </p>
         <p>
@@ -21,7 +21,7 @@ export default function ReenPage() {
           Built with SwiftUI, FastAPI on GCP Cloud Run, Cloud SQL Postgres,
           and Claude API for AI-powered report generation and insights.
         </p>
-        <p>Submitted to the App Store — launching Spring 2026.</p>
+        <p>Submitted to the App Store, launching Spring 2026.</p>
         <p>
           <a
             href="https://reen-health.vercel.app"

@@ -44,6 +44,12 @@ const projects = [
       "An AI-powered inspection system built for an oil refinery company, using computer vision and segmentation models to analyze engineering drawings and facility imagery on GCP.",
   },
   {
+    title: "AI List Curation Agent",
+    type: "Data Piper",
+    description:
+      "A multi-agent system built for a major media company that automates editorial list curation. Uses Gemini, ADK, Vector Search, and BigQuery graph analytics to research candidates, score against editorial criteria, and generate narrative justifications. Deployed as microservices on Cloud Run.",
+  },
+  {
     title: "Document Processing Platform",
     type: "Data Piper",
     description:
