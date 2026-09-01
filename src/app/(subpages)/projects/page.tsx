@@ -18,6 +18,7 @@ const projects = [
     type: "Personal",
     description:
       "An AI-powered event planning studio. Analyzes your Pinterest inspiration to create a complete vision and execution plan for your event, from styling and decor to logistics and vendor recommendations. Coming soon.",
+    link: "https://palomastudioevents.com",
   },
   {
     title: "Life Max",
@@ -97,6 +98,18 @@ export default function ProjectsPage() {
             <p className="text-sm tracking-wide text-muted mt-2 leading-relaxed max-w-xl">
               {project.description}
             </p>
+            {project.link && (
+              <p className="text-sm tracking-wide mt-2">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gray-600 transition-colors"
+                >
+                  Visit →
+                </a>
+              </p>
+            )}
           </div>
         ))}
       </div>
