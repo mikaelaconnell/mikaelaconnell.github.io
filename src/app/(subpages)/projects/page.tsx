@@ -18,7 +18,6 @@ const projects = [
     type: "Personal",
     description:
       "An AI-powered event planning studio. Analyzes your Pinterest inspiration to create a complete vision and execution plan for your event, from styling and decor to logistics and vendor recommendations. Coming soon.",
-    link: "https://palomastudioevents.com",
   },
   {
     title: "Life Max",
