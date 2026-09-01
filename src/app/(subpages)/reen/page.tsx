@@ -21,10 +21,10 @@ export default function ReenPage() {
           Built with SwiftUI, FastAPI on GCP Cloud Run, Cloud SQL Postgres,
           and Claude API for AI-powered report generation and insights.
         </p>
-        <p>Submitted to the App Store, launching Spring 2026.</p>
+        <p>In App Store review, launching Fall 2026.</p>
         <p>
           <a
-            href="https://reen-health.vercel.app"
+            href="https://reen-health.com"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-gray-600 transition-colors"

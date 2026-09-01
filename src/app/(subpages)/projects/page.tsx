@@ -11,7 +11,13 @@ const projects = [
     title: "The Filo",
     type: "Personal",
     description:
-      "A luxury custom embroidery brand where 100% of proceeds go to charity. Each piece is made to order, combining craftsmanship with purpose. Also features an AI-powered event planning service that connects to Pinterest to create a vision and execution plan for your event.",
+      "A luxury custom embroidery brand where 100% of proceeds go to charity. Each piece is made to order, combining craftsmanship with purpose, and every purchase shows exactly which charity it supports.",
+  },
+  {
+    title: "Paloma",
+    type: "Personal",
+    description:
+      "An AI-powered event planning studio. Analyzes your Pinterest inspiration to create a complete vision and execution plan for your event, from styling and decor to logistics and vendor recommendations. Coming soon.",
   },
   {
     title: "Life Max",
@@ -29,7 +35,7 @@ const projects = [
     title: "Animal Recognition System",
     type: "Data Piper",
     description:
-      "A production system built for a veterinary software company to identify individual horses from uploaded images at scale. Uses a fine-tuned SigLIP2 model trained on hundreds of thousands of images to generate visual embeddings, with a multi-step agent pipeline for search, reranking, and metadata matching across 14M+ images and 4.5M horses. Built with FastAPI, BigQuery vector search, Cloud Run, and Vertex AI.",
+      "A production system built for a veterinary software company to identify individual horses from uploaded images at scale. Uses a fine-tuned SigLIP2 model trained on hundreds of thousands of images to generate visual embeddings, with a multi-step agent pipeline for search, reranking, and metadata matching across 14M+ images and 4.5M horses, reaching 87% top-1 and 96% top-5 accuracy. Built with FastAPI, BigQuery vector search, Cloud Run, and Vertex AI.",
   },
   {
     title: "Veterinary Dictation Engine",
@@ -48,6 +54,24 @@ const projects = [
     type: "Data Piper",
     description:
       "A multi-agent system built for a major media company that automates editorial list curation. Uses Gemini, ADK, Vector Search, and BigQuery graph analytics to research candidates, score against editorial criteria, and generate narrative justifications. Deployed as microservices on Cloud Run.",
+  },
+  {
+    title: "Multi-Tenant AI Platform",
+    type: "Data Piper",
+    description:
+      "A shared agentic AI platform built for an international pay-as-you-go solar energy provider serving off-grid households. A Go control plane on Cloud Run orchestrates Gemini Enterprise, with retrieval and grounding on Vertex AI Search and AlloyDB AI, keeping identity, policy, and systems of record outside the model.",
+  },
+  {
+    title: "RFP Response Assistant",
+    type: "Data Piper",
+    description:
+      "A multi-agent assistant built for a medical media company that drafts responses to requests for proposals. Built on Gemini Enterprise with agents for requirement extraction, content retrieval from past proposals, and draft generation.",
+  },
+  {
+    title: "Agentic Development Pipeline",
+    type: "Data Piper",
+    description:
+      "An internal multi-agent code-generation pipeline with self-correcting build and test loops, schema-validated review agents, and a regression evaluation suite gating every change. Built with Vertex AI and Python.",
   },
   {
     title: "Document Processing Platform",

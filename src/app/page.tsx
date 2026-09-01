@@ -46,10 +46,11 @@ export default function Home() {
               and founded Reen, an AI healthcare company.
             </p>
             <p>
-              I am pursuing a Master&apos;s in Data Science at Harvard
+              I am pursuing a Master&apos;s in Data Science and AI at Harvard
               Extension School and hold a B.A. in Economics from Claremont
               McKenna College. I am a New Yorker, an entrepreneur, and a
-              builder.
+              builder, currently training for the New York City and Tokyo
+              Marathons.
             </p>
           </div>
           <div className="flex gap-3 mt-8">

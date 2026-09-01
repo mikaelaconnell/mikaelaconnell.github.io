@@ -6,7 +6,7 @@ const work = [
     company: "Data Piper",
     period: "Present",
     description:
-      "Google Cloud consulting, architecting AI systems for enterprise clients. Current projects include an animal recognition system, a veterinary dictation engine, an industrial inspection platform, a multi-agent list curation system, and document processing SaaS. Work spans computer vision, NLP, agentic pipelines, and cloud infrastructure.",
+      "Google Cloud consulting, architecting AI systems for enterprise clients. Projects include a multi-agent editorial list curation system, an animal recognition system, a multi-tenant agentic platform for a solar energy provider, a veterinary dictation engine, an RFP response assistant, and an internal agentic development pipeline. Work spans agentic systems, computer vision, NLP, and cloud infrastructure.",
   },
   {
     role: "Founder",
@@ -27,7 +27,7 @@ const work = [
 const education = [
   {
     school: "Harvard Extension School",
-    degree: "M.S. in Data Science",
+    degree: "M.S. in Data Science and AI",
   },
   {
     school: "Claremont McKenna College",
