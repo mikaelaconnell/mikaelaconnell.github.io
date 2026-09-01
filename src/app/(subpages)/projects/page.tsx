@@ -1,6 +1,13 @@
 import Footer from "@/components/Footer";
 
-const projects = [
+type Project = {
+  title: string;
+  type: string;
+  description: string;
+  link?: string;
+};
+
+const projects: Project[] = [
   {
     title: "Reen",
     type: "Personal",
@@ -17,7 +24,7 @@ const projects = [
     title: "Paloma",
     type: "Personal",
     description:
-      "An AI-powered event planning studio. Analyzes your Pinterest inspiration to create a complete vision and execution plan for your event, from styling and decor to logistics and vendor recommendations. Coming soon.",
+      "An AI-powered event planning studio. Analyzes your Pinterest inspiration to create a complete vision and execution plan for your event, from styling and decor to logistics and vendor recommendations.",
   },
   {
     title: "Life Max",
