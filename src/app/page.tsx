@@ -28,6 +28,27 @@ const socialLinks = [
   },
 ];
 
+const featured = [
+  {
+    href: "/projects",
+    title: "Editorial Research Agents",
+    description:
+      "A five-agent research system for a major media company that scores candidates for a flagship annual list. Adopted by the editorial team into their selection workflow.",
+  },
+  {
+    href: "/projects",
+    title: "Animal Recognition System",
+    description:
+      "Visual re-identification across 14M+ images with fine-tuned SigLIP2 embeddings and BigQuery vector search, raising top-1 accuracy from 72% to 87%.",
+  },
+  {
+    href: "/reen",
+    title: "Reen",
+    description:
+      "An AI hormonal health platform I founded that turns symptoms, wearables, and lab data into doctor-ready advocacy reports for women.",
+  },
+];
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col px-12 py-12 lg:px-16 lg:py-14">
@@ -40,10 +61,11 @@ export default function Home() {
           </h1>
           <div className="space-y-6 text-sm leading-relaxed tracking-wide max-w-[220px]">
             <p>
-              I am a machine learning engineer building AI systems, cloud
-              infrastructure, and products at Data Piper, a Google Cloud
-              consulting firm. I am passionate about women&apos;s healthcare
-              and founded Reen, an AI healthcare company.
+              I am a forward deployed AI engineer at Data Piper, a Google Cloud
+              consulting firm, where I embed with enterprise clients to take
+              agentic AI systems from prototype to production. I am passionate
+              about women&apos;s healthcare and founded Reen, an AI healthcare
+              company.
             </p>
             <p>
               I am pursuing a Master&apos;s in Data Science and AI at Harvard
@@ -69,26 +91,47 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right area — nav links spread evenly across the top */}
-        <div className="flex-1">
-          <nav className="flex justify-between">
+        {/* Right area — nav links plus featured work */}
+        <div className="flex-1 lg:pl-16">
+          <nav className="flex flex-wrap gap-x-6 gap-y-2 lg:justify-between">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
-                className="text-sm tracking-wide hover:text-muted transition-colors whitespace-pre-line"
+                className="text-sm tracking-wide hover:text-muted transition-colors"
               >
                 {label}
               </Link>
             ))}
           </nav>
+
+          <div className="mt-16 lg:mt-24">
+            <p className="text-xs tracking-widest text-muted uppercase mb-8">
+              Selected Work
+            </p>
+            <div className="grid gap-10 lg:grid-cols-3">
+              {featured.map(({ href, title, description }) => (
+                <Link key={title} href={href} className="group block">
+                  <p className="text-sm tracking-wide mb-2 group-hover:text-muted transition-colors">
+                    {title}
+                  </p>
+                  <p className="text-sm tracking-wide text-muted leading-relaxed">
+                    {description}
+                  </p>
+                  <p className="text-xs tracking-wide mt-3 text-muted group-hover:text-foreground transition-colors">
+                    View &rarr;
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Bottom footer */}
       <footer className="mt-auto pt-24">
         <hr className="border-t border-gray-300 mb-6" />
-        <div className="flex items-end justify-between">
+        <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="text-xs tracking-wide text-muted space-y-1">
             <p>
               For inquiries please contact{" "}

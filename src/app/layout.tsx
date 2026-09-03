@@ -9,9 +9,18 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Mikaela Connell",
+  metadataBase: new URL("https://mikaelaconnell.dev"),
+  title: "Mikaela Connell | Forward Deployed AI Engineer",
   description:
-    "AI/ML Engineer, Entrepreneur, and Builder. Portfolio of Mikaela Connell.",
+    "Forward deployed AI engineer building agentic systems on Google Cloud. Founder of Reen. Portfolio of Mikaela Connell.",
+  openGraph: {
+    title: "Mikaela Connell | Forward Deployed AI Engineer",
+    description:
+      "Forward deployed AI engineer building agentic systems on Google Cloud. Founder of Reen.",
+    url: "https://mikaelaconnell.dev",
+    siteName: "Mikaela Connell",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
