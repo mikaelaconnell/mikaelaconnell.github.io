@@ -61,7 +61,7 @@ export default function Home() {
           </h1>
           <div className="space-y-6 text-sm leading-relaxed tracking-wide max-w-[220px]">
             <p>
-              I am a forward deployed AI engineer at Data Piper, a Google Cloud
+              I am a machine learning engineer at Data Piper, a Google Cloud
               consulting firm, where I embed with enterprise clients to take
               agentic AI systems from prototype to production. I am passionate
               about women&apos;s healthcare and founded Reen, an AI healthcare

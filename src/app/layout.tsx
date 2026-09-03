@@ -10,13 +10,13 @@ const ebGaramond = EB_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mikaelaconnell.dev"),
-  title: "Mikaela Connell | Forward Deployed AI Engineer",
+  title: "Mikaela Connell | Machine Learning Engineer",
   description:
-    "Forward deployed AI engineer building agentic systems on Google Cloud. Founder of Reen. Portfolio of Mikaela Connell.",
+    "Machine learning engineer building agentic AI systems on Google Cloud. Founder of Reen. Portfolio of Mikaela Connell.",
   openGraph: {
-    title: "Mikaela Connell | Forward Deployed AI Engineer",
+    title: "Mikaela Connell | Machine Learning Engineer",
     description:
-      "Forward deployed AI engineer building agentic systems on Google Cloud. Founder of Reen.",
+      "Machine learning engineer building agentic AI systems on Google Cloud. Founder of Reen.",
     url: "https://mikaelaconnell.dev",
     siteName: "Mikaela Connell",
     type: "website",
